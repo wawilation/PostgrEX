@@ -1,0 +1,193 @@
+Postgres Monitoring with postgres_exporter, Prometheus, and Grafana
+
+I. postgres_exporter
+
+1.) Download from source: https://github.com/wrouesnel/postgres_exporter/releases
+ - I got postgres_exporter_v0.8.0_linux-amd64.tar.gz
+	
+2.) Untar!
+
+mkdir /opt/postgres_exporter
+
+cd /opt/postgres_exporter 
+
+# or by one command:  mkdir /opt/postgres_exporter && cd “$_”
+
+wget https://github.com/wrouesnel/postgres_exporter/releases/download/v0.5.1/postgres_exporter_v0.5.1_linux-amd64.tar.gz
+
+tar -xzvf postgres_exporter_v0.8.0_linux-amd64.tar.gz
+
+cd postgres_exporter_v0.8.0_linux-amd64
+
+3.) Copy bin to /usr/local/bin
+
+# we are in /postgres_exporter_v0.5.1_linux-amd64
+sudo cp postgres_exporter /usr/local/bin
+
+4.) Prepare env-file for our postgres_exporter. Create it and add variable with connection string inside
+
+cd /opt/postgres_exporter
+
+sudo vim postgres_exporter.env
+
+# Inside env-file
+DATA_SOURCE_NAME="postgresql://postgres:postgres@localhost:5432/?sslmode=disable"
+
+For specific database:
+DATA_SOURCE_NAME="postgresql://postgres:postgres@localhost:5432/your_database_name?sslmode=disable"
+
+5.) Create service!
+
+vim /etc/systemd/system/postgres_exporter.service
+
+Put config inside and save:
+[Unit]
+Description=Prometheus exporter for Postgresql
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=postgres
+Group=postgres
+WorkingDirectory=/opt/postgres_exporter
+EnvironmentFile=/opt/postgres_exporter/postgres_exporter.env
+ExecStart=/usr/local/bin/postgres_exporter
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+You can specify all the flags you need, or just go with the default:
+…
+
+ExecStart=/usr/local/bin/postgres_exporter \
+    --web.listen-address=:9187 \
+    --web.telemetry-path=/metrics \
+    --extend.query-path=/opt/postgres_exporter/metrics.yaml
+    ....
+
+…
+
+
+Finally enable service and add it to the auto-load:
+
+sudo systemctl daemon-reload
+
+sudo systemctl start postgres_exporter
+
+sudo systemctl enable postgres_exporter
+
+
+Verify: http://192.168.22.15:9187/metrics
+
+
+II. Set up Prometheus
+
+1.) Download from source: https://github.com/prometheus/prometheus/releases
+
+sudo useradd --no-create-home --shell /bin/false prometheus
+
+wget https://github.com/.../prometheus-2.23.0.linux-amd64.tar.gz
+
+tar -xvzf prometheus-2.23.0.linux-amd64.tar.gz
+
+sudo cp prometheus-2.23.0.linux-amd64/prometheus /usr/local/bin/
+
+sudo cp prometheus-2.23.0.linux-amd64/promtool /usr/local/bin/
+
+sudo mkdir /etc/prometheus
+
+sudo cp -r prometheus-2.23.0.linux-amd64/consoles/ /etc/prometheus/consoles
+
+sudo cp -r prometheus-2.23.0.linux-amd64/console_libraries/ /etc/prometheus/console_libraries
+
+sudo cp prometheus-2.23.0.linux-amd64/prometheus.yml /etc/prometheus/
+
+sudo chown -R prometheus:prometheus /etc/prometheus
+
+sudo mkdir /var/lib/prometheus
+
+sudo chown -R prometheus:prometheus /var/lib/prometheus
+
+2.) Make changes to /etc/prometheus/prometheus.yml, indicating where to look for postgres_exporter.
+
+
+...
+  - job_name: 'postgres_exporter'
+    static_configs:
+    - targets: ['192.168.22.15:9187']
+
+3.) Create service
+
+vi /etc/systemd/system/prometheus.service
+
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+ 
+[Service]
+User=prometheus
+Group=prometheus
+ExecStart=/usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus/ --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries
+ 
+[Install]
+WantedBy=default.target
+
+
+4.) Start service and add to start up
+
+sudo systemctl daemon-reload
+sudo systemctl start prometheus
+sudo systemctl status prometheus
+sudo systemctl enable prometheus
+
+If this happens:
+[root@localhost prometheus]# systemctl status prometheus -l
+● prometheus.service - Prometheus
+   Loaded: loaded (/etc/systemd/system/prometheus.service; disabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Mon 2020-12-07 11:14:47 PST; 5min ago
+  Process: 11422 ExecStart=/usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus/ --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries (code=exited, status=2)
+ Main PID: 11422 (code=exited, status=2)
+
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: level=info ts=2020-12-07T03:14:47.415Z caller=main.go:360 msg="Starting Prometheus" version="(version=2.23.0, branch=HEAD, revision=26d89b4b0776fe4cd5a3656dfa520f119a375273)"
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: level=info ts=2020-12-07T03:14:47.415Z caller=main.go:365 build_context="(go=go1.15.5, user=root@37609b3a0a21, date=20201126-10:56:17)"
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: level=info ts=2020-12-07T03:14:47.415Z caller=main.go:366 host_details="(Linux 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 localhost.localdomain (none))"
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: level=info ts=2020-12-07T03:14:47.415Z caller=main.go:367 fd_limits="(soft=1024, hard=4096)"
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: level=info ts=2020-12-07T03:14:47.415Z caller=main.go:368 vm_limits="(soft=unlimited, hard=unlimited)"
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: level=error ts=2020-12-07T03:14:47.417Z caller=query_logger.go:87 component=activeQueryTracker msg="Error opening query log file" file=/var/lib/prometheus/queries.active err="open /var/lib/prometheus/queries.active: permission denied"
+Dec 07 11:14:47 localhost.localdomain prometheus[11422]: panic: Unable to create mmap-ed active query log
+Dec 07 11:14:47 localhost.localdomain systemd[1]: prometheus.service: main process exited, code=exited, status=2/INVALIDARGUMENT
+Dec 07 11:14:47 localhost.localdomain systemd[1]: Unit prometheus.service entered failed state.
+Dec 07 11:14:47 localhost.localdomain systemd[1]: prometheus.service failed.
+
+DO THIS: chown -R prometheus:prometheus /var/lib/prometheus
+
+Verify: http://192.168.22.15:9090/metrics
+
+
+III. Set up GRAFANA
+
+1. wget https://dl.grafana.com/oss/release/grafana-7.3.4-1.x86_64.rpm
+sudo yum install grafana-7.3.4-1.x86_64.rpm 
+
+2. sudo systemctl daemon-reload
+sudo systemctl start grafana-server
+sudo systemctl status grafana-server
+sudo systemctl enable grafana-server
+
+3. Run on browser: http://192.168.22.15:3000/
+
+4. Add data source. Choose Prometheus.
+
+- Type http://192.168.22.15:9090/ in the URL.
+- Save & Test
+
+5. Grafana has an original dashboard for this postgres_exporter. As we already know, to add dashboard get to the your_grafana_host/dashboard/import. Fill id with 6742 number, choose Prometheus source and click import. Get the result! 
+
+
+
+
+
+
