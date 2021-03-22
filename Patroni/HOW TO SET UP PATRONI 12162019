@@ -1,0 +1,237 @@
+HOW TO SET UP PATRONI:
+
+VMs:
+1. etcd - 192.168.243.203
+	hostname: etcd-01
+2. patroni 1 - 192.168.243.183
+	hostname: patroni-01
+3. patroni 2 - 192.168.243.162
+	hostname: patroni-02
+
+
+ETCD:
+1. Install etcd:
+
+- yum install etcd
+- binaries will be installed in /usr/bin (etcd and etcdctl)
+- config file is here: /etc/etcd/etcd.conf
+
+example for 2-node etcd cluster:
+on Node 1:
+ETCD_INITIAL_CLUSTER="bhuvi-etcd1=http://10.128.0.114:2380,bhuvi-etcd2=http://10.128.0.115:2380"
+ETCD_INITIAL_CLUSTER_STATE="new"
+ETCD_INITIAL_CLUSTER_TOKEN="etcd-cluster-01"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="http://10.128.0.114:2380"
+ETCD_DATA_DIR="/var/etcd"
+ETCD_LISTEN_PEER_URLS="http://10.128.0.114:2380"
+ETCD_LISTEN_CLIENT_URLS="http://10.128.0.114:2379,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://10.128.0.114:2379"
+ETCD_NAME="bhuvi-etcd1"
+
+on Node 2:
+ETCD_INITIAL_CLUSTER="bhuvi-etcd1=http://10.128.0.114:2380,bhuvi-etcd2=http://10.128.0.115:2380"
+ETCD_INITIAL_CLUSTER_STATE="new"
+ETCD_INITIAL_CLUSTER_TOKEN="etcd-cluster-01"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="http://10.128.0.115:2380"
+ETCD_DATA_DIR="/var/etcd"
+ETCD_LISTEN_PEER_URLS="http://10.128.0.115:2380"
+ETCD_LISTEN_CLIENT_URLS="http://10.128.0.115:2379,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://10.128.0.115:2379"
+ETCD_NAME="bhuvi-etcd2"
+
+for my POC:
+ETCD_INITIAL_CLUSTER="etcd-01=http://192.168.243.203:2380"
+ETCD_INITIAL_CLUSTER_STATE="new"
+ETCD_INITIAL_CLUSTER_TOKEN="etcd-cluster-01"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="http://192.168.243.203:2380"
+ETCD_DATA_DIR="/var/etcd"
+ETCD_LISTEN_PEER_URLS="http://192.168.243.203:2380"
+ETCD_LISTEN_CLIENT_URLS="http://192.168.243.203:2380,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://192.168.243.203:2380"
+ETCD_NAME="etcd-01"
+
+2. start etcd service
+- systemctl start etcd
+
+3. Check cluster health:
+- etcdctl cluster-health
+
+
+PATRONI:
+1. Installation:
+yum install epel-release
+yum install gcc python-devel
+yum install python-psycopg2 python-pip PyYAML
+yum install python2-pip
+pip install --upgrade pip 
+pip install --upgrade setuptools
+pip install psycopg2-binary
+pip install python-etcd
+pip install psutil
+pip install wheel
+pip install patroni
+
+2. Create a systemd service for patroni. So edit the file /etc/systemd/system/patroni.service to contain the following:
+[Unit]
+Description=Runners to orchestrate a high-availability PostgreSQL
+After=syslog.target network.target
+ 
+[Service]
+Type=simple
+ 
+User=postgres
+Group=postgres
+ 
+ExecStart=/bin/patroni /etc/patroni.yml
+ 
+KillMode=process
+ 
+TimeoutSec=30
+ 
+Restart=no
+ 
+[Install]
+WantedBy=multi-user.targ
+
+3. Create a /etc/patroni.yml file for the 2 nodes:
+Postgres 1:
+scope: my-ha-cluster
+name: pg-1
+
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: 192.168.243.183:8008
+
+etcd:
+  host: 192.168.243.203:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    postgresql:
+      use_pg_rewind: true
+      use_slots: true
+      parameters:
+        wal_level: replica
+        hot_standby: "on"
+        wal_keep_segments: 100
+        max_wal_senders: 4
+        max_replication_slots: 10
+        checkpoint_timeout: 15min
+
+  initdb:
+  - encoding: UTF8
+
+  pg_hba:
+  - host all all 0.0.0.0/0 md5
+  - host replication rep_user 192.168.243.183/32 md5
+  - host replication rep_user 192.168.243.162/32 md5
+
+  users:
+    postgres:
+      password: postgres
+      options:
+        - createrole
+        - createdb
+    rep_user:
+      password: rep_user
+      options:
+        - replication
+
+postgresql:
+  listen: 192.168.243.162:5432
+  connect_address: 192.168.243.183:5432
+  data_dir: /var/lib/pgsql/11/data
+  config_dir: /var/lib/pgsql/11/data
+  bin_dir: /usr/pgsql-11/bin
+  authentication:
+    replication:
+      username: rep_user
+      password: rep_user
+    superuser:
+      username: postgres
+      password: postgres
+  parameters:
+    unix_socket_directories: '/tmp'
+
+
+Postgres 2:
+scope: my-ha-cluster
+name: pg-2
+
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: 192.168.243.162:8008
+
+etcd:
+  host: 192.168.243.203:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    postgresql:
+      use_pg_rewind: true
+      use_slots: true
+      parameters:
+        wal_level: replica
+        hot_standby: "on"
+        wal_keep_segments: 100
+        max_wal_senders: 4
+        max_replication_slots: 10
+        checkpoint_timeout: 15min
+
+  initdb:
+  - encoding: UTF8
+
+  pg_hba:
+  - host all all 0.0.0.0/0 md5
+  - host replication rep_user 192.168.243.183/32 md5
+  - host replication rep_user 192.168.243.162/32 md5
+
+  users:
+    postgres:
+      password: postgres
+      options:
+        - createrole
+        - createdb
+    rep_user:
+      password: rep_user
+      options:
+        - replication
+
+postgresql:
+  listen: 192.168.243.162:5432
+  connect_address: 192.168.243.162:5432
+  data_dir: /var/lib/pgsql/11/data
+  config_dir: /var/lib/pgsql/11/data
+  bin_dir: /usr/pgsql-11/bin
+  authentication:
+    replication:
+      username: rep_user
+      password: rep_user
+    superuser:
+      username: postgres
+      password: postgres
+  parameters:
+    unix_socket_directories: '/tmp'
+
+
+patronictl -d etcd://192.168.243.203:2379 list my-ha-cluster
+
+
+POSTGRES:
+Make sure the ff. are set:
+- wal_level = replica
+- hot_standby = on
+- wal_keep_segments = 100
+- max_wal_senders = 4
+- max_replication_slots = 10
+- checkpoint_timeout = 15min
+
+
