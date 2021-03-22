@@ -1,0 +1,86 @@
+Wealthpark
+
+http://wpschema.byteset.com/
+u: monster
+p: eniCOroN
+
+
+DB: pm922_stag
+
+RDS Staging:
+username: ‘potato’,
+password: ‘rjcadmin2014’,
+host: ‘k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com’,
+port: ‘3306’
+
+mysql -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -P 3306 -u potato -p
+
+1. In postgres: 
+
+CREATE DATABASE pm922_stag;
+
+2. Run pgloader:
+
+pgloader --summary /tmp/summary.txt --verbose mysql://potato:rjcadmin2014@k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com:3306/pm922_stag postgresql://postgres@127.0.0.1/pm922_stag
+
+3. Change search_path in postgres
+
+ALTER DATABASE pm922_stag SET search_path TO pm922_stag, public;
+
+
+*note: pgloader logfile is in /tmp/pgloader
+
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p stasiacapital_stag > /tmp/stasiacapital_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p vortex_stag > /tmp/vortex_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p fujiplan_stag > /tmp/fujiplan_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p butterfly_stag > /tmp/butterfly_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p potato_stag > /tmp/potato_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p sonareholdings_stag > /tmp/sonareholdings_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p yamashita_stag > /tmp/yamashita_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p stasiacapital_test > /tmp/stasiacapital_test.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p butterfly_test > /tmp/butterfly_test.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p mech_stag > /tmp/mech_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p foreland_stag > /tmp/foreland_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p foreland_test > /tmp/foreland_test.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p cherish_test > /tmp/cherish_test.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p yamashita_test > /tmp/yamashita_test.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p stasiacapital_test > /tmp/stasiacapital_test.sql
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p stasiacapital_stag > /tmp/stasiacapital_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p pm922_stag > /tmp/pm922_stag.sql
+
+mysqldump -h k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p clearthlife_stag > /tmp/clearthlife_stag.sql
+
+
+
+SELECT SUM(ROUND(((data_length + index_length) / 1024 / 1024), 2)) AS "Size (MB)" FROM information_schema.TABLES WHERE table_schema = "butterfly_stag";
+
+POSTGRES RDS:
+
+psql -h postgresql-server.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -p 5432 -U potato
+
+psql --host=postgresql-server.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com --port=5432 --username=potato --password --dbname=postgres 
+
+
+mysql -h k8s-development-restored.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -P 3306 -u potato -p
+
+
+mysqldump -h k8s-development-restored.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com -u potato -p demo_stag > /tmp/demo_stag.sql
+
+
+

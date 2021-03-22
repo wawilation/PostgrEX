@@ -1,0 +1,1190 @@
+2019-05-09T07:26:13.012000+01:00 NOTICE Starting pgloader, log system is ready.
+2019-05-09T07:26:13.020000+01:00 LOG pgloader version "3.6.1"
+2019-05-09T07:26:44.011000+01:00 NOTICE Starting pgloader, log system is ready.
+2019-05-09T07:26:44.020000+01:00 LOG pgloader version "3.6.1"
+2019-05-09T07:26:44.084000+01:00 LOG Migrating from #<MYSQL-CONNECTION mysql://potato@k8s-development.ctmspwuawvbg.ap-northeast-1.rds.amazonaws.com:3306/pm922_stag {10058A4B23}>
+2019-05-09T07:26:44.084000+01:00 LOG Migrating into #<PGSQL-CONNECTION pgsql://postgres@127.0.0.1:5432/pm922_stag {1005AEEAE3}>
+2019-05-09T07:26:56.515000+01:00 NOTICE Prepare PostgreSQL database.
+2019-05-09T07:26:59.702000+01:00 NOTICE COPY pm922_stag.access_tokens
+2019-05-09T07:26:59.708000+01:00 NOTICE COPY pm922_stag.assets_management_contract
+2019-05-09T07:26:59.708000+01:00 NOTICE COPY pm922_stag.assets_management_contract_intl
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.bathroom_info
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.bedroom_info
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.category
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.category_intl
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.company_info
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.company_info_intl
+2019-05-09T07:26:59.709000+01:00 NOTICE COPY pm922_stag.connecting_road
+2019-05-09T07:26:59.710000+01:00 NOTICE COPY pm922_stag.connecting_road_intl
+2019-05-09T07:26:59.710000+01:00 NOTICE COPY pm922_stag.connecting_road_status
+2019-05-09T07:26:59.710000+01:00 NOTICE COPY pm922_stag.contract_account_history
+2019-05-09T07:26:59.710000+01:00 NOTICE COPY pm922_stag.country
+2019-05-09T07:26:59.710000+01:00 NOTICE COPY pm922_stag.country_intl
+2019-05-09T07:26:59.711000+01:00 NOTICE COPY pm922_stag.currency
+2019-05-09T07:26:59.711000+01:00 NOTICE COPY pm922_stag.email_change_tokens
+2019-05-09T07:26:59.711000+01:00 NOTICE COPY pm922_stag.environment
+2019-05-09T07:26:59.711000+01:00 NOTICE COPY pm922_stag.environment_intl
+2019-05-09T07:26:59.711000+01:00 NOTICE COPY pm922_stag.exclusion_info
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.extract_transform_load_log
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.extract_transform_load_log_history
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.facilities
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.facilities_intl
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.failed_logins
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.features
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.features_intl
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.feature_information_management
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.feature_information_management_intl
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.fos_group
+2019-05-09T07:26:59.712000+01:00 NOTICE COPY pm922_stag.fos_user_user_group
+2019-05-09T07:26:59.713000+01:00 NOTICE COPY pm922_stag.generated_statements
+2019-05-09T07:26:59.725000+01:00 NOTICE COPY pm922_stag.gl
+2019-05-09T07:26:59.725000+01:00 NOTICE COPY pm922_stag.gl_column_settings
+2019-05-09T07:26:59.725000+01:00 NOTICE COPY pm922_stag.gl_info
+2019-05-09T07:26:59.725000+01:00 NOTICE COPY pm922_stag.gl_info_tag
+2019-05-09T07:26:59.726000+01:00 NOTICE COPY pm922_stag.gl_info_tmp
+2019-05-09T07:26:59.726000+01:00 NOTICE COPY pm922_stag.gl_media
+2019-05-09T07:26:59.727000+01:00 NOTICE COPY pm922_stag.guarantor_info
+2019-05-09T07:26:59.727000+01:00 NOTICE COPY pm922_stag.guarantor_info_intl
+2019-05-09T07:26:59.727000+01:00 NOTICE COPY pm922_stag.industry_type
+2019-05-09T07:26:59.727000+01:00 NOTICE COPY pm922_stag.industry_type_intl
+2019-05-09T07:26:59.727000+01:00 NOTICE COPY pm922_stag.invoice
+2019-05-09T07:26:59.728000+01:00 NOTICE COPY pm922_stag.invoice_item
+2019-05-09T07:26:59.728000+01:00 NOTICE COPY pm922_stag.invoice_item_group
+2019-05-09T07:26:59.728000+01:00 NOTICE COPY pm922_stag.invoice_item_group_intl
+2019-05-09T07:26:59.728000+01:00 NOTICE COPY pm922_stag.invoice_item_intl
+2019-05-09T07:26:59.728000+01:00 NOTICE COPY pm922_stag.invoice_name
+2019-05-09T07:26:59.728000+01:00 NOTICE COPY pm922_stag.isp_header_match
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.language
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.migration_versions
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.money_transfer_info
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.money_transfer_info_intl
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.money_transfer_info_tmp
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.money_transfer_info_tmp_intl
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.nearest_station
+2019-05-09T07:26:59.729000+01:00 NOTICE COPY pm922_stag.nearest_station_intl
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.onetime_account
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner_admin
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner_bank_info
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner_bank_info_intl
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner_broker_info
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner_broker_info_intl
+2019-05-09T07:26:59.730000+01:00 NOTICE COPY pm922_stag.owner_income_info
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_income_info_intl
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_intl
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_invoice
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_invoice_publish
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_loan_info
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_loan_info_intl
+2019-05-09T07:26:59.731000+01:00 NOTICE COPY pm922_stag.owner_property
+2019-05-09T07:26:59.732000+01:00 NOTICE COPY pm922_stag.owner_room
+2019-05-09T07:26:59.732000+01:00 NOTICE COPY pm922_stag.owner_work_info
+2019-05-09T07:26:59.732000+01:00 NOTICE COPY pm922_stag.owner_work_info_intl
+2019-05-09T07:26:59.732000+01:00 NOTICE COPY pm922_stag.parking_facilities
+2019-05-09T07:26:59.732000+01:00 NOTICE COPY pm922_stag.parking_facilities_intl
+2019-05-09T07:26:59.733000+01:00 NOTICE COPY pm922_stag.payee_vendor
+2019-05-09T07:26:59.733000+01:00 NOTICE COPY pm922_stag.payee_vendor_intl
+2019-05-09T07:26:59.733000+01:00 NOTICE COPY pm922_stag.payment_match
+2019-05-09T07:26:59.733000+01:00 NOTICE COPY pm922_stag.payment_match_publish
+2019-05-09T07:26:59.733000+01:00 NOTICE COPY pm922_stag.payment_type
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.payment_type_intl
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.pdf_token
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.photo
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.pl_memo
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.postal_code
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.prefecture
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.prefecture_line_info
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.prime_broker
+2019-05-09T07:26:59.734000+01:00 NOTICE COPY pm922_stag.prime_broker_intl
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_acquisition_info
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_acquisition_info_intl
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_addresses
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_addresses_intl
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_address_status
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_address_status_intl
+2019-05-09T07:26:59.735000+01:00 NOTICE COPY pm922_stag.property_facilities
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_facilities_intl
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_features
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_features_intl
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_income_expenditure_info
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_income_expenditure_info_intl
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_income_expenditure_info_tmp
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_income_expenditure_info_tmp_intl
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_intl
+2019-05-09T07:26:59.736000+01:00 NOTICE COPY pm922_stag.property_media
+2019-05-09T07:26:59.740000+01:00 NOTICE COPY pm922_stag.property_repair_info
+2019-05-09T07:26:59.740000+01:00 NOTICE COPY pm922_stag.property_repair_info_intl
+2019-05-09T07:26:59.740000+01:00 NOTICE COPY pm922_stag.property_tag
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.railway_line
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.railway_line_log
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.register_address
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.registration_of_address_info
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.remittance_type
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.remittance_type_intl
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.rental_contract
+2019-05-09T07:26:59.741000+01:00 NOTICE COPY pm922_stag.rental_contract_cancellation
+2019-05-09T07:26:59.742000+01:00 NOTICE COPY pm922_stag.rental_contract_cancellation_intl
+2019-05-09T07:26:59.742000+01:00 NOTICE COPY pm922_stag.rental_contract_info
+2019-05-09T07:26:59.742000+01:00 NOTICE COPY pm922_stag.rental_contract_info_intl
+2019-05-09T07:26:59.742000+01:00 NOTICE COPY pm922_stag.rental_contract_renew_info
+2019-05-09T07:26:59.742000+01:00 NOTICE COPY pm922_stag.rental_contract_renew_info_intl
+2019-05-09T07:26:59.743000+01:00 NOTICE COPY pm922_stag.rental_payment
+2019-05-09T07:26:59.743000+01:00 NOTICE COPY pm922_stag.repair_invoice_owner
+2019-05-09T07:26:59.743000+01:00 NOTICE COPY pm922_stag.repair_invoice_tenant
+2019-05-09T07:26:59.743000+01:00 NOTICE COPY pm922_stag.repair_reserve_fund_info
+2019-05-09T07:26:59.744000+01:00 NOTICE COPY pm922_stag.repair_reserve_fund_info_intl
+2019-05-09T07:26:59.744000+01:00 NOTICE COPY pm922_stag.room
+2019-05-09T07:26:59.744000+01:00 NOTICE COPY pm922_stag.room_acquisition_info
+2019-05-09T07:26:59.744000+01:00 NOTICE COPY pm922_stag.room_acquisition_info_intl
+2019-05-09T07:26:59.744000+01:00 NOTICE COPY pm922_stag.room_income_expenditure_info
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_income_expenditure_info_intl
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_income_expenditure_info_tmp
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_income_expenditure_info_tmp_intl
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_intl
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_money_transfer_info
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_money_transfer_info_intl
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_money_transfer_info_tmp
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_money_transfer_info_tmp_intl
+2019-05-09T07:26:59.745000+01:00 NOTICE COPY pm922_stag.room_pl_info
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.setting
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.setting_history
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.station
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.station_log
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.tags
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.tax_agent_contract
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.tax_agent_contract_intl
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.tax_classification_info
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.tax_classification_info_intl
+2019-05-09T07:26:59.746000+01:00 NOTICE COPY pm922_stag.tenant
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.tenant_info
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.tenant_info_intl
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.tenant_intl
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.tenant_work_info
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.tenant_work_info_intl
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag."user"
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.user_login_log
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.user_type
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.vendor_industry_type_info
+2019-05-09T07:26:59.747000+01:00 NOTICE COPY pm922_stag.vendor_invoice_item_info
+2019-05-09T07:26:59.748000+01:00 NOTICE COPY pm922_stag.zip_code
+2019-05-09T07:26:59.748000+01:00 NOTICE COPY pm922_stag.zip_log
+2019-05-09T07:27:00.506000+01:00 NOTICE DONE copying pm922_stag.assets_management_contract
+2019-05-09T07:27:00.519000+01:00 NOTICE CREATE INDEX idx_30327_fk_4e72c09954177153 ON pm922_stag.assets_management_contract (owner_bank_info_id);
+2019-05-09T07:27:00.522000+01:00 NOTICE CREATE UNIQUE INDEX idx_30327_primary ON pm922_stag.assets_management_contract (id);
+2019-05-09T07:27:00.523000+01:00 NOTICE CREATE INDEX idx_30327_room_id ON pm922_stag.assets_management_contract (room_id);
+2019-05-09T07:27:00.807000+01:00 NOTICE DONE copying pm922_stag.access_tokens
+2019-05-09T07:27:00.818000+01:00 NOTICE CREATE INDEX idx_30318_access_tokens_user_id_indx ON pm922_stag.access_tokens (user_id);
+2019-05-09T07:27:00.818000+01:00 NOTICE CREATE UNIQUE INDEX idx_30318_primary ON pm922_stag.access_tokens (id);
+2019-05-09T07:27:01.531000+01:00 NOTICE DONE copying pm922_stag.bathroom_info
+2019-05-09T07:27:01.533000+01:00 NOTICE DONE copying pm922_stag.assets_management_contract_intl
+2019-05-09T07:27:01.546000+01:00 NOTICE CREATE INDEX idx_30343_idx_e48515f7e172815f ON pm922_stag.assets_management_contract_intl (assets_management_contract_id);
+2019-05-09T07:27:01.551000+01:00 NOTICE CREATE UNIQUE INDEX idx_30349_primary ON pm922_stag.bathroom_info (id);
+2019-05-09T07:27:01.551000+01:00 NOTICE CREATE UNIQUE INDEX idx_30349_uniq_1063a398f4770a29 ON pm922_stag.bathroom_info (feature_information_management_id);
+2019-05-09T07:27:01.552000+01:00 NOTICE CREATE UNIQUE INDEX idx_30343_primary ON pm922_stag.assets_management_contract_intl (id);
+2019-05-09T07:27:02.063000+01:00 NOTICE DONE copying pm922_stag.bedroom_info
+2019-05-09T07:27:02.076000+01:00 NOTICE CREATE UNIQUE INDEX idx_30355_primary ON pm922_stag.bedroom_info (id);
+2019-05-09T07:27:02.077000+01:00 NOTICE CREATE UNIQUE INDEX idx_30355_uniq_8b76515f4770a29 ON pm922_stag.bedroom_info (feature_information_management_id);
+2019-05-09T07:27:02.139000+01:00 NOTICE DONE copying pm922_stag.category
+2019-05-09T07:27:02.152000+01:00 NOTICE CREATE UNIQUE INDEX idx_30361_primary ON pm922_stag.category (id);
+2019-05-09T07:27:02.782000+01:00 NOTICE DONE copying pm922_stag.company_info
+2019-05-09T07:27:02.793000+01:00 NOTICE DONE copying pm922_stag.category_intl
+2019-05-09T07:27:02.797000+01:00 NOTICE CREATE UNIQUE INDEX idx_30373_primary ON pm922_stag.company_info (id);
+2019-05-09T07:27:02.799000+01:00 NOTICE CREATE UNIQUE INDEX idx_30373_id_unique ON pm922_stag.company_info (id);
+2019-05-09T07:27:02.801000+01:00 NOTICE CREATE INDEX idx_30373_country_idx ON pm922_stag.company_info (country_id);
+2019-05-09T07:27:02.808000+01:00 NOTICE CREATE UNIQUE INDEX idx_30367_primary ON pm922_stag.category_intl (id);
+2019-05-09T07:27:02.810000+01:00 NOTICE CREATE INDEX idx_30367_idx_a1ef6a7912469de2 ON pm922_stag.category_intl (category_id);
+2019-05-09T07:27:03.148000+01:00 NOTICE DONE copying pm922_stag.company_info_intl
+2019-05-09T07:27:03.150000+01:00 NOTICE DONE copying pm922_stag.connecting_road
+2019-05-09T07:27:03.162000+01:00 NOTICE CREATE UNIQUE INDEX idx_30382_primary ON pm922_stag.company_info_intl (id);
+2019-05-09T07:27:03.166000+01:00 NOTICE CREATE UNIQUE INDEX idx_30382_id_unique ON pm922_stag.company_info_intl (id);
+2019-05-09T07:27:03.166000+01:00 NOTICE CREATE INDEX idx_30391_connecting_road_status_id ON pm922_stag.connecting_road (connecting_road_status_id);
+2019-05-09T07:27:03.168000+01:00 NOTICE CREATE INDEX idx_30382_idx_400448407dd9db2f ON pm922_stag.company_info_intl (company_info_id);
+2019-05-09T07:27:03.171000+01:00 NOTICE CREATE UNIQUE INDEX idx_30391_primary ON pm922_stag.connecting_road (id);
+2019-05-09T07:27:03.660000+01:00 NOTICE DONE copying pm922_stag.connecting_road_intl
+2019-05-09T07:27:03.661000+01:00 NOTICE DONE copying pm922_stag.connecting_road_status
+2019-05-09T07:27:03.674000+01:00 NOTICE CREATE UNIQUE INDEX idx_30397_primary ON pm922_stag.connecting_road_intl (id);
+2019-05-09T07:27:03.679000+01:00 NOTICE CREATE UNIQUE INDEX idx_30403_uniq_d5896406549213ec ON pm922_stag.connecting_road_status (property_id);
+2019-05-09T07:27:03.679000+01:00 NOTICE CREATE UNIQUE INDEX idx_30403_primary ON pm922_stag.connecting_road_status (id);
+2019-05-09T07:27:03.680000+01:00 NOTICE CREATE INDEX idx_30397_idx_2968e903ae44ba3e ON pm922_stag.connecting_road_intl (connecting_road_id);
+2019-05-09T07:27:03.681000+01:00 NOTICE CREATE INDEX idx_30403_property_id_idx ON pm922_stag.connecting_road_status (property_id);
+2019-05-09T07:27:04.446000+01:00 NOTICE DONE copying pm922_stag.contract_account_history
+2019-05-09T07:27:04.458000+01:00 NOTICE CREATE INDEX idx_30409_idx_3dcf19f92576e0fd ON pm922_stag.contract_account_history (contract_id);
+2019-05-09T07:27:04.464000+01:00 NOTICE CREATE INDEX idx_30409_idx_3dcf19f99b6b5fba ON pm922_stag.contract_account_history (account_id);
+2019-05-09T07:27:04.464000+01:00 NOTICE CREATE UNIQUE INDEX idx_30409_primary ON pm922_stag.contract_account_history (id);
+2019-05-09T07:27:04.480000+01:00 NOTICE DONE copying pm922_stag.country
+2019-05-09T07:27:04.491000+01:00 NOTICE CREATE UNIQUE INDEX idx_30415_name_unique ON pm922_stag.country (name);
+2019-05-09T07:27:04.497000+01:00 NOTICE CREATE UNIQUE INDEX idx_30415_primary ON pm922_stag.country (id);
+2019-05-09T07:27:05.357000+01:00 NOTICE DONE copying pm922_stag.currency
+2019-05-09T07:27:05.359000+01:00 NOTICE DONE copying pm922_stag.country_intl
+2019-05-09T07:27:05.373000+01:00 NOTICE CREATE UNIQUE INDEX idx_30427_primary ON pm922_stag.currency (id);
+2019-05-09T07:27:05.373000+01:00 NOTICE CREATE INDEX idx_30421_language_id ON pm922_stag.country_intl (language_id);
+2019-05-09T07:27:05.376000+01:00 NOTICE CREATE INDEX idx_30421_country_id ON pm922_stag.country_intl (country_id);
+2019-05-09T07:27:05.376000+01:00 NOTICE CREATE UNIQUE INDEX idx_30421_primary ON pm922_stag.country_intl (id);
+2019-05-09T07:27:05.842000+01:00 NOTICE DONE copying pm922_stag.email_change_tokens
+2019-05-09T07:27:05.851000+01:00 NOTICE DONE copying pm922_stag.environment
+2019-05-09T07:27:05.856000+01:00 NOTICE CREATE INDEX idx_30436_email_change_tokens_user_id_indx ON pm922_stag.email_change_tokens (user_id);
+2019-05-09T07:27:05.858000+01:00 NOTICE CREATE UNIQUE INDEX idx_30436_primary ON pm922_stag.email_change_tokens (id);
+2019-05-09T07:27:05.868000+01:00 NOTICE CREATE INDEX idx_30445_idx_4626de22549213ec ON pm922_stag.environment (property_id);
+2019-05-09T07:27:05.869000+01:00 NOTICE CREATE UNIQUE INDEX idx_30445_primary ON pm922_stag.environment (id);
+2019-05-09T07:27:06.549000+01:00 NOTICE DONE copying pm922_stag.exclusion_info
+2019-05-09T07:27:06.550000+01:00 NOTICE DONE copying pm922_stag.environment_intl
+2019-05-09T07:27:06.564000+01:00 NOTICE CREATE UNIQUE INDEX idx_30451_primary ON pm922_stag.environment_intl (id);
+2019-05-09T07:27:06.565000+01:00 NOTICE CREATE INDEX idx_30451_idx_9038003a903e3a94 ON pm922_stag.environment_intl (environment_id);
+2019-05-09T07:27:06.566000+01:00 NOTICE CREATE UNIQUE INDEX idx_30457_primary ON pm922_stag.exclusion_info (id);
+2019-05-09T07:27:08.469000+01:00 NOTICE DONE copying pm922_stag.extract_transform_load_log
+2019-05-09T07:27:08.486000+01:00 NOTICE CREATE INDEX idx_30463_type_idx ON pm922_stag.extract_transform_load_log (type_id, object_id);
+2019-05-09T07:27:08.486000+01:00 NOTICE CREATE UNIQUE INDEX idx_30463_primary ON pm922_stag.extract_transform_load_log (id);
+2019-05-09T07:27:08.855000+01:00 NOTICE DONE copying pm922_stag.facilities
+2019-05-09T07:27:08.866000+01:00 NOTICE CREATE UNIQUE INDEX idx_30481_primary ON pm922_stag.facilities (id);
+2019-05-09T07:27:09.485000+01:00 NOTICE DONE copying pm922_stag.failed_logins
+2019-05-09T07:27:09.497000+01:00 NOTICE CREATE UNIQUE INDEX idx_30493_primary ON pm922_stag.failed_logins (id);
+2019-05-09T07:27:09.498000+01:00 NOTICE CREATE INDEX idx_30493_idx_d2ceaad6f132696e ON pm922_stag.failed_logins (userid);
+2019-05-09T07:27:10.120000+01:00 NOTICE DONE copying pm922_stag.features_intl
+2019-05-09T07:27:10.132000+01:00 NOTICE CREATE UNIQUE INDEX idx_30505_primary ON pm922_stag.features_intl (id);
+2019-05-09T07:27:10.133000+01:00 NOTICE CREATE INDEX idx_30505_idx_ce61af61cec89005 ON pm922_stag.features_intl (features_id);
+2019-05-09T07:27:11.044000+01:00 NOTICE DONE copying pm922_stag.feature_information_management_intl
+2019-05-09T07:27:11.056000+01:00 NOTICE CREATE UNIQUE INDEX idx_30517_primary ON pm922_stag.feature_information_management_intl (id);
+2019-05-09T07:27:11.056000+01:00 NOTICE CREATE INDEX idx_30517_idx_e78a842af4770a29 ON pm922_stag.feature_information_management_intl (feature_information_management_id);
+2019-05-09T07:27:11.829000+01:00 NOTICE DONE copying pm922_stag.fos_user_user_group
+2019-05-09T07:27:11.840000+01:00 NOTICE CREATE INDEX idx_30530_idx_3d7b6a06a76ed395 ON pm922_stag.fos_user_user_group (user_id);
+2019-05-09T07:27:11.846000+01:00 NOTICE CREATE INDEX idx_30530_idx_3d7b6a06d4873f76 ON pm922_stag.fos_user_user_group (group_id);
+2019-05-09T07:27:11.846000+01:00 NOTICE CREATE UNIQUE INDEX idx_30530_primary ON pm922_stag.fos_user_user_group (user_id, group_id);
+2019-05-09T07:27:26.960000+01:00 NOTICE DONE copying pm922_stag.extract_transform_load_log_history
+2019-05-09T07:27:26.979000+01:00 NOTICE CREATE UNIQUE INDEX idx_30472_primary ON pm922_stag.extract_transform_load_log_history (id);
+2019-05-09T07:27:27.806000+01:00 NOTICE DONE copying pm922_stag.facilities_intl
+2019-05-09T07:27:27.819000+01:00 NOTICE CREATE UNIQUE INDEX idx_30487_primary ON pm922_stag.facilities_intl (id);
+2019-05-09T07:27:27.820000+01:00 NOTICE CREATE INDEX idx_30487_idx_509b95b95263402 ON pm922_stag.facilities_intl (facilities_id);
+2019-05-09T07:27:28.462000+01:00 NOTICE DONE copying pm922_stag.features
+2019-05-09T07:27:28.474000+01:00 NOTICE CREATE UNIQUE INDEX idx_30499_primary ON pm922_stag.features (id);
+2019-05-09T07:27:28.475000+01:00 NOTICE CREATE UNIQUE INDEX idx_30499_name_unique ON pm922_stag.features (name);
+2019-05-09T07:27:29.017000+01:00 NOTICE DONE copying pm922_stag.feature_information_management
+2019-05-09T07:27:29.029000+01:00 NOTICE CREATE UNIQUE INDEX idx_30511_primary ON pm922_stag.feature_information_management (id);
+2019-05-09T07:27:29.029000+01:00 NOTICE CREATE UNIQUE INDEX idx_30511_uniq_9235dea3549213ec ON pm922_stag.feature_information_management (property_id);
+2019-05-09T07:27:29.572000+01:00 NOTICE DONE copying pm922_stag.fos_group
+2019-05-09T07:27:29.585000+01:00 NOTICE CREATE UNIQUE INDEX idx_30523_uniq_9a1cacea5e237e06 ON pm922_stag.fos_group (name);
+2019-05-09T07:27:29.585000+01:00 NOTICE CREATE UNIQUE INDEX idx_30523_primary ON pm922_stag.fos_group (id);
+2019-05-09T07:27:30.109000+01:00 NOTICE DONE copying pm922_stag.generated_statements
+2019-05-09T07:27:30.122000+01:00 NOTICE CREATE INDEX idx_30535_idx_input ON pm922_stag.generated_statements (owner_id, type, target_year, from_month, to_month, format, tab, language_id);
+2019-05-09T07:27:30.123000+01:00 NOTICE CREATE UNIQUE INDEX idx_30535_primary ON pm922_stag.generated_statements (id);
+2019-05-09T07:27:30.687000+01:00 NOTICE DONE copying pm922_stag.gl_column_settings
+2019-05-09T07:27:30.699000+01:00 NOTICE CREATE UNIQUE INDEX idx_30553_primary ON pm922_stag.gl_column_settings (user_id);
+2019-05-09T07:27:30.700000+01:00 NOTICE CREATE UNIQUE INDEX idx_30553_user_id_unique ON pm922_stag.gl_column_settings (user_id);
+2019-05-09T07:27:30.948000+01:00 NOTICE DONE copying pm922_stag.gl
+2019-05-09T07:27:30.958000+01:00 NOTICE CREATE UNIQUE INDEX idx_30547_uniq_gl_external_id ON pm922_stag.gl (external_gl_id);
+2019-05-09T07:27:30.964000+01:00 NOTICE CREATE UNIQUE INDEX idx_30547_primary ON pm922_stag.gl (id);
+2019-05-09T07:27:31.185000+01:00 NOTICE DONE copying pm922_stag.gl_info_tag
+2019-05-09T07:27:31.200000+01:00 NOTICE CREATE INDEX idx_30571_tag_id ON pm922_stag.gl_info_tag (tag_id);
+2019-05-09T07:27:31.203000+01:00 NOTICE CREATE INDEX idx_30571_gl_id ON pm922_stag.gl_info_tag (gl_id);
+2019-05-09T07:27:31.203000+01:00 NOTICE CREATE UNIQUE INDEX idx_30571_primary ON pm922_stag.gl_info_tag (id);
+2019-05-09T07:27:31.656000+01:00 NOTICE DONE copying pm922_stag.gl_media
+2019-05-09T07:27:31.668000+01:00 NOTICE CREATE UNIQUE INDEX idx_30591_primary ON pm922_stag.gl_media (id);
+2019-05-09T07:27:31.668000+01:00 NOTICE CREATE INDEX idx_30591_gl_id ON pm922_stag.gl_media (gl_id);
+2019-05-09T07:27:32.233000+01:00 NOTICE DONE copying pm922_stag.guarantor_info_intl
+2019-05-09T07:27:32.246000+01:00 NOTICE CREATE UNIQUE INDEX idx_30609_primary ON pm922_stag.guarantor_info_intl (id);
+2019-05-09T07:27:32.246000+01:00 NOTICE CREATE INDEX idx_30609_idx_9de266a021c68bea ON pm922_stag.guarantor_info_intl (guarantor_info_id);
+2019-05-09T07:27:32.751000+01:00 NOTICE DONE copying pm922_stag.industry_type_intl
+2019-05-09T07:27:32.769000+01:00 NOTICE CREATE UNIQUE INDEX idx_30624_primary ON pm922_stag.industry_type_intl (id);
+2019-05-09T07:27:32.769000+01:00 NOTICE CREATE INDEX idx_30624_idx_6089fa83f2d3bae6 ON pm922_stag.industry_type_intl (industry_type_id);
+2019-05-09T07:27:33.223000+01:00 NOTICE DONE copying pm922_stag.invoice_item
+2019-05-09T07:27:33.235000+01:00 NOTICE CREATE UNIQUE INDEX idx_30641_primary ON pm922_stag.invoice_item (id);
+2019-05-09T07:27:33.241000+01:00 NOTICE CREATE INDEX idx_30641_idx_1dde477bc58e6386 ON pm922_stag.invoice_item (invoice_item_group_id);
+2019-05-09T07:27:33.847000+01:00 NOTICE DONE copying pm922_stag.invoice_item_group_intl
+2019-05-09T07:27:33.859000+01:00 NOTICE CREATE UNIQUE INDEX idx_30654_primary ON pm922_stag.invoice_item_group_intl (id);
+2019-05-09T07:27:33.860000+01:00 NOTICE CREATE INDEX idx_30654_name_index ON pm922_stag.invoice_item_group_intl (name);
+2019-05-09T07:27:33.865000+01:00 NOTICE CREATE INDEX idx_30654_idx_fa7bcc09c58e6386 ON pm922_stag.invoice_item_group_intl (invoice_item_group_id);
+2019-05-09T07:27:34.296000+01:00 NOTICE DONE copying pm922_stag.invoice_name
+2019-05-09T07:27:34.307000+01:00 NOTICE CREATE UNIQUE INDEX idx_30666_primary ON pm922_stag.invoice_name (id);
+2019-05-09T07:27:34.313000+01:00 NOTICE CREATE INDEX idx_30666_name_index ON pm922_stag.invoice_name (name);
+2019-05-09T07:27:34.830000+01:00 NOTICE DONE copying pm922_stag.language
+2019-05-09T07:27:34.842000+01:00 NOTICE CREATE UNIQUE INDEX idx_30681_primary ON pm922_stag.language (id);
+2019-05-09T07:27:34.847000+01:00 NOTICE CREATE UNIQUE INDEX idx_30681_name_unique ON pm922_stag.language (name);
+2019-05-09T07:27:34.847000+01:00 NOTICE CREATE UNIQUE INDEX idx_30681_short_code_unique ON pm922_stag.language (short_code);
+2019-05-09T07:27:35.493000+01:00 NOTICE DONE copying pm922_stag.money_transfer_info
+2019-05-09T07:27:35.507000+01:00 NOTICE CREATE UNIQUE INDEX idx_30690_primary ON pm922_stag.money_transfer_info (id);
+2019-05-09T07:27:35.514000+01:00 NOTICE CREATE INDEX idx_30690_updated_at_idx ON pm922_stag.money_transfer_info (updated_at);
+2019-05-09T07:27:35.515000+01:00 NOTICE CREATE INDEX idx_30690_country_id_idx ON pm922_stag.money_transfer_info (country_id);
+2019-05-09T07:27:35.515000+01:00 NOTICE CREATE INDEX idx_30690_idx_1b7bb942e872685c ON pm922_stag.money_transfer_info (remittance_type_id);
+2019-05-09T07:27:35.515000+01:00 NOTICE CREATE INDEX idx_30690_date_idx ON pm922_stag.money_transfer_info (date);
+2019-05-09T07:27:35.516000+01:00 NOTICE CREATE INDEX idx_30690_idx_1b7bb9427e3c61f9 ON pm922_stag.money_transfer_info (owner_id);
+2019-05-09T07:27:36.036000+01:00 NOTICE DONE copying pm922_stag.money_transfer_info_tmp
+2019-05-09T07:27:36.048000+01:00 NOTICE CREATE UNIQUE INDEX idx_30708_primary ON pm922_stag.money_transfer_info_tmp (id);
+2019-05-09T07:27:36.057000+01:00 NOTICE CREATE INDEX idx_30708_idx_dcb8584ae872685c ON pm922_stag.money_transfer_info_tmp (remittance_type_id);
+2019-05-09T07:27:36.058000+01:00 NOTICE CREATE INDEX idx_30708_gl_id ON pm922_stag.money_transfer_info_tmp (gl_id);
+2019-05-09T07:27:36.058000+01:00 NOTICE CREATE INDEX idx_30708_date_idx ON pm922_stag.money_transfer_info_tmp (date);
+2019-05-09T07:27:36.059000+01:00 NOTICE CREATE INDEX idx_30708_updated_at_idx ON pm922_stag.money_transfer_info_tmp (updated_at);
+2019-05-09T07:27:36.059000+01:00 NOTICE CREATE INDEX idx_30708_idx_dcb8584a7e3c61f9 ON pm922_stag.money_transfer_info_tmp (owner_id);
+2019-05-09T07:27:36.362000+01:00 NOTICE DONE copying pm922_stag.nearest_station
+2019-05-09T07:27:36.374000+01:00 NOTICE CREATE INDEX idx_30726_property_id ON pm922_stag.nearest_station (property_id);
+2019-05-09T07:27:36.375000+01:00 NOTICE CREATE UNIQUE INDEX idx_30726_primary ON pm922_stag.nearest_station (id);
+2019-05-09T07:27:36.765000+01:00 NOTICE DONE copying pm922_stag.onetime_account
+2019-05-09T07:27:36.777000+01:00 NOTICE CREATE UNIQUE INDEX idx_30741_primary ON pm922_stag.onetime_account (id);
+2019-05-09T07:27:36.783000+01:00 NOTICE CREATE UNIQUE INDEX idx_30741_contract_id_unique ON pm922_stag.onetime_account (contract_id);
+2019-05-09T07:27:36.783000+01:00 NOTICE CREATE UNIQUE INDEX idx_30741_account_unique ON pm922_stag.onetime_account (branch_number, account_number);
+2019-05-09T07:27:37.101000+01:00 NOTICE DONE copying pm922_stag.owner_admin
+2019-05-09T07:27:37.114000+01:00 NOTICE CREATE INDEX idx_30776_fk_owner_admin_user_idx ON pm922_stag.owner_admin (prime_admin_id);
+2019-05-09T07:27:37.121000+01:00 NOTICE CREATE INDEX idx_30776_fk_owner_admin_idx ON pm922_stag.owner_admin (owner_id, prime_admin_id, status);
+2019-05-09T07:27:37.121000+01:00 NOTICE CREATE UNIQUE INDEX idx_30776_primary ON pm922_stag.owner_admin (id);
+2019-05-09T07:27:37.122000+01:00 NOTICE CREATE INDEX idx_30776_fk_owner_admin_owner_idx ON pm922_stag.owner_admin (owner_id);
+2019-05-09T07:27:37.499000+01:00 NOTICE DONE copying pm922_stag.owner_bank_info_intl
+2019-05-09T07:27:37.519000+01:00 NOTICE CREATE INDEX idx_30791_idx_448d0cac77c26b9c ON pm922_stag.owner_bank_info_intl (owner_bank_info_id);
+2019-05-09T07:27:37.520000+01:00 NOTICE CREATE UNIQUE INDEX idx_30791_primary ON pm922_stag.owner_bank_info_intl (id);
+2019-05-09T07:27:37.938000+01:00 NOTICE DONE copying pm922_stag.owner_broker_info_intl
+2019-05-09T07:27:37.950000+01:00 NOTICE CREATE INDEX idx_30806_idx_bc651e58ae965a87 ON pm922_stag.owner_broker_info_intl (owner_broker_info_id);
+2019-05-09T07:27:37.951000+01:00 NOTICE CREATE UNIQUE INDEX idx_30806_primary ON pm922_stag.owner_broker_info_intl (id);
+2019-05-09T07:27:38.322000+01:00 NOTICE DONE copying pm922_stag.owner_income_info_intl
+2019-05-09T07:27:38.335000+01:00 NOTICE CREATE INDEX idx_30818_idx_8ca45f43a1b62f04 ON pm922_stag.owner_income_info_intl (owner_income_info_id);
+2019-05-09T07:27:38.335000+01:00 NOTICE CREATE UNIQUE INDEX idx_30818_primary ON pm922_stag.owner_income_info_intl (id);
+2019-05-09T07:27:46.899000+01:00 NOTICE DONE copying pm922_stag.owner_invoice
+2019-05-09T07:27:46.922000+01:00 NOTICE CREATE INDEX idx_30833_invoice_date_idx ON pm922_stag.owner_invoice (invoice_date);
+2019-05-09T07:27:46.925000+01:00 NOTICE CREATE INDEX idx_30833_fk_1c13919be0b6648d_idx ON pm922_stag.owner_invoice (invoice_item_id);
+2019-05-09T07:27:46.925000+01:00 NOTICE CREATE INDEX idx_30833_updated_at_idx ON pm922_stag.owner_invoice (updated_at);
+2019-05-09T07:27:46.926000+01:00 NOTICE CREATE INDEX idx_30833_fk_0423456790 ON pm922_stag.owner_invoice (gl_id);
+2019-05-09T07:27:46.927000+01:00 NOTICE CREATE UNIQUE INDEX idx_30833_primary ON pm922_stag.owner_invoice (id);
+2019-05-09T07:27:46.928000+01:00 NOTICE CREATE UNIQUE INDEX idx_30833_uniq_1c13919b345bc702 ON pm922_stag.owner_invoice (payee_vendor_id);
+2019-05-09T07:27:46.929000+01:00 NOTICE CREATE INDEX idx_30833_idx_1c13919b54177093 ON pm922_stag.owner_invoice (room_id);
+2019-05-09T07:27:47.446000+01:00 NOTICE DONE copying pm922_stag.owner_loan_info
+2019-05-09T07:27:47.457000+01:00 NOTICE CREATE UNIQUE INDEX idx_30853_primary ON pm922_stag.owner_loan_info (id);
+2019-05-09T07:27:47.459000+01:00 NOTICE CREATE UNIQUE INDEX idx_30853_uniq_185f3890549213ec ON pm922_stag.owner_loan_info (property_id);
+2019-05-09T07:27:47.460000+01:00 NOTICE CREATE INDEX idx_30853_idx_185f38907e3c61f9 ON pm922_stag.owner_loan_info (owner_id);
+2019-05-09T07:27:47.465000+01:00 NOTICE CREATE INDEX idx_30853_property_id ON pm922_stag.owner_loan_info (property_id);
+2019-05-09T07:27:47.915000+01:00 NOTICE DONE copying pm922_stag.owner_property
+2019-05-09T07:27:47.929000+01:00 NOTICE CREATE INDEX idx_30868_owner_property_idex ON pm922_stag.owner_property (owner_id, property_id);
+2019-05-09T07:27:47.929000+01:00 NOTICE CREATE INDEX idx_30868_idx_9d12a51d7e3c61f9 ON pm922_stag.owner_property (owner_id);
+2019-05-09T07:27:47.929000+01:00 NOTICE CREATE UNIQUE INDEX idx_30868_primary ON pm922_stag.owner_property (id);
+2019-05-09T07:27:47.933000+01:00 NOTICE CREATE INDEX idx_30868_idx_9d12a51d549213ec ON pm922_stag.owner_property (property_id);
+2019-05-09T07:27:48.438000+01:00 NOTICE DONE copying pm922_stag.owner_work_info
+2019-05-09T07:27:48.451000+01:00 NOTICE CREATE INDEX idx_30882_owner_id ON pm922_stag.owner_work_info (owner_id);
+2019-05-09T07:27:48.453000+01:00 NOTICE CREATE UNIQUE INDEX idx_30882_primary ON pm922_stag.owner_work_info (id);
+2019-05-09T07:27:48.454000+01:00 NOTICE CREATE UNIQUE INDEX idx_30882_uniq_3031f3dc7e3c61f9 ON pm922_stag.owner_work_info (owner_id);
+2019-05-09T07:27:48.588000+01:00 NOTICE DONE copying pm922_stag.gl_info
+2019-05-09T07:27:48.601000+01:00 NOTICE CREATE INDEX idx_30561_gl_id ON pm922_stag.gl_info (gl_id);
+2019-05-09T07:27:48.601000+01:00 NOTICE CREATE UNIQUE INDEX idx_30561_primary ON pm922_stag.gl_info (id);
+2019-05-09T07:27:48.779000+01:00 NOTICE DONE copying pm922_stag.parking_facilities
+2019-05-09T07:27:48.790000+01:00 NOTICE CREATE INDEX idx_30897_feature_information_management_id ON pm922_stag.parking_facilities (feature_information_management_id);
+2019-05-09T07:27:48.795000+01:00 NOTICE CREATE UNIQUE INDEX idx_30897_primary ON pm922_stag.parking_facilities (id);
+2019-05-09T07:27:49.547000+01:00 NOTICE DONE copying pm922_stag.payee_vendor
+2019-05-09T07:27:49.558000+01:00 NOTICE CREATE UNIQUE INDEX idx_30909_primary ON pm922_stag.payee_vendor (id);
+2019-05-09T07:28:08.239000+01:00 NOTICE DONE copying pm922_stag.gl_info_tmp
+2019-05-09T07:28:08.253000+01:00 NOTICE CREATE INDEX idx_30580_gl_id ON pm922_stag.gl_info_tmp (gl_id);
+2019-05-09T07:28:08.254000+01:00 NOTICE CREATE UNIQUE INDEX idx_30580_primary ON pm922_stag.gl_info_tmp (id);
+2019-05-09T07:28:08.893000+01:00 NOTICE DONE copying pm922_stag.guarantor_info
+2019-05-09T07:28:08.905000+01:00 NOTICE CREATE UNIQUE INDEX idx_30600_primary ON pm922_stag.guarantor_info (id);
+2019-05-09T07:28:08.906000+01:00 NOTICE CREATE UNIQUE INDEX idx_30600_uniq_63cdd4699033212a ON pm922_stag.guarantor_info (tenant_id);
+2019-05-09T07:28:09.193000+01:00 NOTICE DONE copying pm922_stag.industry_type
+2019-05-09T07:28:09.204000+01:00 NOTICE CREATE UNIQUE INDEX idx_30618_primary ON pm922_stag.industry_type (id);
+2019-05-09T07:28:13.315000+01:00 NOTICE DONE copying pm922_stag.payment_match
+2019-05-09T07:28:13.327000+01:00 NOTICE CREATE UNIQUE INDEX idx_30928_primary ON pm922_stag.payment_match (id);
+2019-05-09T07:28:13.329000+01:00 NOTICE CREATE INDEX idx_30928_rental_payment_id_idx ON pm922_stag.payment_match (rental_payment_id);
+2019-05-09T07:28:13.330000+01:00 NOTICE CREATE INDEX idx_30928_gl_id ON pm922_stag.payment_match (gl_id);
+2019-05-09T07:28:13.334000+01:00 NOTICE CREATE INDEX idx_30928_invoice_id_idx ON pm922_stag.payment_match (invoice_id);
+2019-05-09T07:28:13.996000+01:00 NOTICE DONE copying pm922_stag.payment_type
+2019-05-09T07:28:14.008000+01:00 NOTICE CREATE INDEX idx_30948_name_index ON pm922_stag.payment_type (name);
+2019-05-09T07:28:14.013000+01:00 NOTICE CREATE UNIQUE INDEX idx_30948_primary ON pm922_stag.payment_type (id);
+2019-05-09T07:28:14.812000+01:00 NOTICE DONE copying pm922_stag.pdf_token
+2019-05-09T07:28:14.824000+01:00 NOTICE CREATE UNIQUE INDEX idx_30968_primary ON pm922_stag.pdf_token (id);
+2019-05-09T07:28:14.825000+01:00 NOTICE CREATE INDEX idx_30968_user_id_idx ON pm922_stag.pdf_token (user_id);
+2019-05-09T07:28:15.922000+01:00 NOTICE DONE copying pm922_stag.pl_memo
+2019-05-09T07:28:15.938000+01:00 NOTICE CREATE UNIQUE INDEX idx_30984_primary ON pm922_stag.pl_memo (id);
+2019-05-09T07:28:17.066000+01:00 NOTICE DONE copying pm922_stag.prefecture
+2019-05-09T07:28:17.080000+01:00 NOTICE CREATE UNIQUE INDEX idx_30996_primary ON pm922_stag.prefecture (id);
+2019-05-09T07:28:17.081000+01:00 NOTICE CREATE INDEX idx_30996_country_id_idx ON pm922_stag.prefecture (country_id);
+2019-05-09T07:28:18.101000+01:00 NOTICE DONE copying pm922_stag.prime_broker
+2019-05-09T07:28:18.111000+01:00 NOTICE CREATE UNIQUE INDEX idx_31005_primary ON pm922_stag.prime_broker (id);
+2019-05-09T07:28:19.299000+01:00 NOTICE DONE copying pm922_stag.property
+2019-05-09T07:28:19.311000+01:00 NOTICE CREATE UNIQUE INDEX idx_31023_uniq_8bf21cde3c555e9b ON pm922_stag.property (external_property_id);
+2019-05-09T07:28:19.317000+01:00 NOTICE CREATE INDEX idx_31023_idx_8bf21cde1f897a7d ON pm922_stag.property (developer_name_id);
+2019-05-09T07:28:19.318000+01:00 NOTICE CREATE INDEX idx_31023_idx_8bf21cdeb8948909 ON pm922_stag.property (designer_name_id);
+2019-05-09T07:28:19.320000+01:00 NOTICE CREATE INDEX idx_31023_idx_8bf21cdedaf6876d ON pm922_stag.property (construction_company_name_id);
+2019-05-09T07:28:19.321000+01:00 NOTICE CREATE INDEX idx_31023_country_id_idx ON pm922_stag.property (country_id);
+2019-05-09T07:28:19.323000+01:00 NOTICE CREATE UNIQUE INDEX idx_31023_primary ON pm922_stag.property (id);
+2019-05-09T07:28:20.131000+01:00 NOTICE DONE copying pm922_stag.property_acquisition_info_intl
+2019-05-09T07:28:20.142000+01:00 NOTICE CREATE INDEX idx_31075_idx_381084bb74a95ee ON pm922_stag.property_acquisition_info_intl (property_acquisition_info_id);
+2019-05-09T07:28:20.143000+01:00 NOTICE CREATE UNIQUE INDEX idx_31075_primary ON pm922_stag.property_acquisition_info_intl (id);
+2019-05-09T07:28:20.988000+01:00 NOTICE DONE copying pm922_stag.property_addresses_intl
+2019-05-09T07:28:20.999000+01:00 NOTICE CREATE INDEX idx_31090_idx_6c89ed5340168f46 ON pm922_stag.property_addresses_intl (property_address_id);
+2019-05-09T07:28:21.000000+01:00 NOTICE CREATE UNIQUE INDEX idx_31090_primary ON pm922_stag.property_addresses_intl (id);
+2019-05-09T07:28:21.752000+01:00 NOTICE DONE copying pm922_stag.property_address_status_intl
+2019-05-09T07:28:21.763000+01:00 NOTICE CREATE INDEX idx_31102_idx_40ac5a3c87a8e82 ON pm922_stag.property_address_status_intl (property_address_status_id);
+2019-05-09T07:28:21.768000+01:00 NOTICE CREATE UNIQUE INDEX idx_31102_primary ON pm922_stag.property_address_status_intl (id);
+2019-05-09T07:28:22.291000+01:00 NOTICE DONE copying pm922_stag.property_facilities_intl
+2019-05-09T07:28:22.305000+01:00 NOTICE CREATE INDEX idx_31114_idx_5720957b1193190 ON pm922_stag.property_facilities_intl (feature_information_management_intl_id);
+2019-05-09T07:28:22.309000+01:00 NOTICE CREATE INDEX idx_31114_idx_5720957be56306c1 ON pm922_stag.property_facilities_intl (facility_intl_id);
+2019-05-09T07:28:22.309000+01:00 NOTICE CREATE UNIQUE INDEX idx_31114_primary ON pm922_stag.property_facilities_intl (id);
+2019-05-09T07:28:22.790000+01:00 NOTICE DONE copying pm922_stag.property_features_intl
+2019-05-09T07:28:22.803000+01:00 NOTICE CREATE UNIQUE INDEX idx_31126_primary ON pm922_stag.property_features_intl (id);
+2019-05-09T07:28:22.808000+01:00 NOTICE CREATE INDEX idx_31126_idx_dc1943c160e4b879 ON pm922_stag.property_features_intl (feature_id);
+2019-05-09T07:28:22.809000+01:00 NOTICE CREATE INDEX idx_31126_idx_dc1943c11193190 ON pm922_stag.property_features_intl (feature_information_management_intl_id);
+2019-05-09T07:28:23.242000+01:00 NOTICE DONE copying pm922_stag.property_income_expenditure_info_intl
+2019-05-09T07:28:23.254000+01:00 NOTICE CREATE UNIQUE INDEX idx_31140_primary ON pm922_stag.property_income_expenditure_info_intl (id);
+2019-05-09T07:28:23.255000+01:00 NOTICE CREATE INDEX idx_31140_idx_8903f4273d64b08 ON pm922_stag.property_income_expenditure_info_intl (income_expenditure_info_id);
+2019-05-09T07:28:23.256000+01:00 NOTICE CREATE INDEX idx_31140_updated_at_idx ON pm922_stag.property_income_expenditure_info_intl (updated_at);
+2019-05-09T07:28:23.694000+01:00 NOTICE DONE copying pm922_stag.property_income_expenditure_info_tmp_intl
+2019-05-09T07:28:23.706000+01:00 NOTICE CREATE UNIQUE INDEX idx_31156_primary ON pm922_stag.property_income_expenditure_info_tmp_intl (id);
+2019-05-09T07:28:23.712000+01:00 NOTICE CREATE INDEX idx_31156_idx_b1538ad59633697b ON pm922_stag.property_income_expenditure_info_tmp_intl (income_expenditure_info_tmp_id);
+2019-05-09T07:28:23.713000+01:00 NOTICE CREATE INDEX idx_31156_updated_at_idx ON pm922_stag.property_income_expenditure_info_tmp_intl (updated_at);
+2019-05-09T07:28:24.131000+01:00 NOTICE DONE copying pm922_stag.property_media
+2019-05-09T07:28:24.143000+01:00 NOTICE CREATE INDEX idx_31171_property_id_idx ON pm922_stag.property_media (property_id);
+2019-05-09T07:28:24.145000+01:00 NOTICE CREATE UNIQUE INDEX idx_31171_primary ON pm922_stag.property_media (id);
+2019-05-09T07:28:24.146000+01:00 NOTICE CREATE INDEX idx_31171_room_id_idx ON pm922_stag.property_media (room_id);
+2019-05-09T07:28:24.355000+01:00 NOTICE DONE copying pm922_stag.invoice
+2019-05-09T07:28:24.370000+01:00 NOTICE CREATE INDEX idx_30630_idx_9065174454177093 ON pm922_stag.invoice (room_id);
+2019-05-09T07:28:24.377000+01:00 NOTICE CREATE UNIQUE INDEX idx_30630_primary ON pm922_stag.invoice (id);
+2019-05-09T07:28:24.378000+01:00 NOTICE CREATE INDEX idx_30630_invoice_date_idx ON pm922_stag.invoice (invoice_date);
+2019-05-09T07:28:24.379000+01:00 NOTICE CREATE INDEX idx_30630_fk_90651744e0b6648d ON pm922_stag.invoice (invoice_item_id);
+2019-05-09T07:28:24.382000+01:00 NOTICE CREATE INDEX idx_30630_updated_at_idx ON pm922_stag.invoice (updated_at);
+2019-05-09T07:28:24.385000+01:00 NOTICE CREATE INDEX idx_30630_tenant_id_idx ON pm922_stag.invoice (tenant_id);
+2019-05-09T07:28:24.398000+01:00 NOTICE CREATE INDEX idx_30630_fk_0223456790 ON pm922_stag.invoice (gl_id);
+2019-05-09T07:28:24.494000+01:00 NOTICE DONE copying pm922_stag.property_repair_info_intl
+2019-05-09T07:28:24.765000+01:00 NOTICE DONE copying pm922_stag.railway_line
+2019-05-09T07:28:25.191000+01:00 NOTICE DONE copying pm922_stag.invoice_item_group
+2019-05-09T07:28:25.204000+01:00 NOTICE CREATE UNIQUE INDEX idx_31186_primary ON pm922_stag.property_repair_info_intl (id);
+2019-05-09T07:28:25.207000+01:00 NOTICE CREATE UNIQUE INDEX idx_31196_primary ON pm922_stag.railway_line (line_cd);
+2019-05-09T07:28:25.208000+01:00 NOTICE CREATE INDEX idx_31186_idx_471f383515f44f6f ON pm922_stag.property_repair_info_intl (property_repair_info_id);
+2019-05-09T07:28:25.222000+01:00 NOTICE DONE copying pm922_stag.register_address
+2019-05-09T07:28:25.228000+01:00 NOTICE CREATE UNIQUE INDEX idx_30648_primary ON pm922_stag.invoice_item_group (id);
+2019-05-09T07:28:25.523000+01:00 NOTICE DONE copying pm922_stag.invoice_item_intl
+2019-05-09T07:28:25.571000+01:00 NOTICE CREATE INDEX idx_30660_name_index ON pm922_stag.invoice_item_intl (name);
+2019-05-09T07:28:25.573000+01:00 NOTICE CREATE UNIQUE INDEX idx_31210_uniq_4d22d49f549213ec ON pm922_stag.register_address (property_id);
+2019-05-09T07:28:25.573000+01:00 NOTICE CREATE UNIQUE INDEX idx_31196_uniq_58317dd7b7949dc8 ON pm922_stag.railway_line (line_cd);
+2019-05-09T07:28:25.584000+01:00 NOTICE CREATE INDEX idx_30660_idx_87eba559e0b6648d ON pm922_stag.invoice_item_intl (invoice_item_id);
+2019-05-09T07:28:25.584000+01:00 NOTICE CREATE UNIQUE INDEX idx_30660_primary ON pm922_stag.invoice_item_intl (id);
+2019-05-09T07:28:25.585000+01:00 NOTICE CREATE UNIQUE INDEX idx_31210_primary ON pm922_stag.register_address (id);
+2019-05-09T07:28:25.804000+01:00 NOTICE DONE copying pm922_stag.remittance_type
+2019-05-09T07:28:25.815000+01:00 NOTICE CREATE UNIQUE INDEX idx_31225_primary ON pm922_stag.remittance_type (id);
+2019-05-09T07:28:25.860000+01:00 NOTICE DONE copying pm922_stag.isp_header_match
+2019-05-09T07:28:25.871000+01:00 NOTICE CREATE UNIQUE INDEX idx_30672_primary ON pm922_stag.isp_header_match (id);
+2019-05-09T07:28:26.115000+01:00 NOTICE DONE copying pm922_stag.migration_versions
+2019-05-09T07:28:26.127000+01:00 NOTICE CREATE UNIQUE INDEX idx_30685_primary ON pm922_stag.migration_versions (version);
+2019-05-09T07:28:26.270000+01:00 NOTICE DONE copying pm922_stag.rental_contract
+2019-05-09T07:28:26.285000+01:00 NOTICE CREATE INDEX idx_31244_room_id_idx ON pm922_stag.rental_contract (room_id);
+2019-05-09T07:28:26.285000+01:00 NOTICE CREATE INDEX idx_31244_tenant_id_idx ON pm922_stag.rental_contract (tenant_id);
+2019-05-09T07:28:26.285000+01:00 NOTICE CREATE UNIQUE INDEX idx_31244_primary ON pm922_stag.rental_contract (id);
+2019-05-09T07:28:26.466000+01:00 NOTICE DONE copying pm922_stag.money_transfer_info_intl
+2019-05-09T07:28:26.478000+01:00 NOTICE CREATE INDEX idx_30702_idx_c48a2637e78f21c0 ON pm922_stag.money_transfer_info_intl (money_transfer_info_id);
+2019-05-09T07:28:26.479000+01:00 NOTICE CREATE UNIQUE INDEX idx_30702_primary ON pm922_stag.money_transfer_info_intl (id);
+2019-05-09T07:28:26.480000+01:00 NOTICE CREATE INDEX idx_30702_updated_at_idx ON pm922_stag.money_transfer_info_intl (updated_at);
+2019-05-09T07:28:26.549000+01:00 NOTICE DONE copying pm922_stag.rental_contract_cancellation_intl
+2019-05-09T07:28:26.568000+01:00 NOTICE CREATE INDEX idx_31257_idx_6eab6fd7566add7a ON pm922_stag.rental_contract_cancellation_intl (rental_contract_cancellation_id);
+2019-05-09T07:28:26.568000+01:00 NOTICE CREATE UNIQUE INDEX idx_31257_primary ON pm922_stag.rental_contract_cancellation_intl (id);
+2019-05-09T07:28:26.845000+01:00 NOTICE DONE copying pm922_stag.money_transfer_info_tmp_intl
+2019-05-09T07:28:26.857000+01:00 NOTICE CREATE INDEX idx_30720_idx_8d6b223bac942118 ON pm922_stag.money_transfer_info_tmp_intl (money_transfer_info_tmp_id);
+2019-05-09T07:28:26.858000+01:00 NOTICE CREATE INDEX idx_30720_updated_at_idx ON pm922_stag.money_transfer_info_tmp_intl (updated_at);
+2019-05-09T07:28:26.859000+01:00 NOTICE CREATE UNIQUE INDEX idx_30720_primary ON pm922_stag.money_transfer_info_tmp_intl (id);
+2019-05-09T07:28:26.970000+01:00 NOTICE DONE copying pm922_stag.rental_contract_info_intl
+2019-05-09T07:28:26.983000+01:00 NOTICE CREATE INDEX idx_31276_rental_contract_info_id_idx ON pm922_stag.rental_contract_info_intl (rental_contract_info_id);
+2019-05-09T07:28:26.983000+01:00 NOTICE CREATE UNIQUE INDEX idx_31276_primary ON pm922_stag.rental_contract_info_intl (id);
+2019-05-09T07:28:27.160000+01:00 NOTICE DONE copying pm922_stag.nearest_station_intl
+2019-05-09T07:28:27.177000+01:00 NOTICE CREATE INDEX idx_30735_idx_e2acd84626386119 ON pm922_stag.nearest_station_intl (nearest_station_id);
+2019-05-09T07:28:27.177000+01:00 NOTICE CREATE UNIQUE INDEX idx_30735_primary ON pm922_stag.nearest_station_intl (id);
+2019-05-09T07:28:27.269000+01:00 NOTICE DONE copying pm922_stag.rental_contract_renew_info_intl
+2019-05-09T07:28:27.280000+01:00 NOTICE CREATE UNIQUE INDEX idx_31292_primary ON pm922_stag.rental_contract_renew_info_intl (id);
+2019-05-09T07:28:27.281000+01:00 NOTICE CREATE INDEX idx_31292_contract_renew_info_id_idx ON pm922_stag.rental_contract_renew_info_intl (contract_renew_info_id);
+2019-05-09T07:28:27.458000+01:00 NOTICE DONE copying pm922_stag.owner
+2019-05-09T07:28:27.470000+01:00 NOTICE CREATE INDEX idx_30747_mailing_country_idx ON pm922_stag.owner (mailing_country);
+2019-05-09T07:28:27.472000+01:00 NOTICE CREATE INDEX idx_30747_residence_country_idx ON pm922_stag.owner (residence_country_id);
+2019-05-09T07:28:27.478000+01:00 NOTICE CREATE UNIQUE INDEX idx_30747_uniq_cf60e67c9130d30a ON pm922_stag.owner (external_owner_id);
+2019-05-09T07:28:27.478000+01:00 NOTICE CREATE INDEX idx_30747_nationality_idx ON pm922_stag.owner (nationality_country_id);
+2019-05-09T07:28:27.480000+01:00 NOTICE CREATE INDEX idx_30747_bank_country_idx ON pm922_stag.owner (bank_country_id);
+2019-05-09T07:28:27.480000+01:00 NOTICE CREATE UNIQUE INDEX idx_30747_primary ON pm922_stag.owner (id);
+2019-05-09T07:28:27.536000+01:00 NOTICE DONE copying pm922_stag.repair_invoice_owner
+2019-05-09T07:28:27.550000+01:00 NOTICE CREATE INDEX idx_31310_idx_repair_invoice_owner_property_repair_info_id ON pm922_stag.repair_invoice_owner (property_repair_info_id);
+2019-05-09T07:28:27.560000+01:00 NOTICE CREATE INDEX idx_31310_repair_invoice_owner_id ON pm922_stag.repair_invoice_owner (owner_id);
+2019-05-09T07:28:27.571000+01:00 NOTICE CREATE UNIQUE INDEX idx_31310_uniq_a445cefe2989f1fd ON pm922_stag.repair_invoice_owner (invoice_id);
+2019-05-09T07:28:27.573000+01:00 NOTICE CREATE UNIQUE INDEX idx_31310_primary ON pm922_stag.repair_invoice_owner (id);
+2019-05-09T07:28:27.735000+01:00 NOTICE DONE copying pm922_stag.owner_bank_info
+2019-05-09T07:28:27.748000+01:00 NOTICE CREATE INDEX idx_30782_idx_6392106a708ff8c6 ON pm922_stag.owner_bank_info (bank_country_id);
+2019-05-09T07:28:27.749000+01:00 NOTICE CREATE UNIQUE INDEX idx_30782_primary ON pm922_stag.owner_bank_info (id);
+2019-05-09T07:28:27.749000+01:00 NOTICE CREATE INDEX idx_30782_owner_id ON pm922_stag.owner_bank_info (owner_id);
+2019-05-09T07:28:27.847000+01:00 NOTICE DONE copying pm922_stag.repair_reserve_fund_info
+2019-05-09T07:28:27.858000+01:00 NOTICE CREATE INDEX idx_31322_room_id ON pm922_stag.repair_reserve_fund_info (room_id);
+2019-05-09T07:28:27.859000+01:00 NOTICE CREATE UNIQUE INDEX idx_31322_primary ON pm922_stag.repair_reserve_fund_info (id);
+2019-05-09T07:28:27.860000+01:00 NOTICE CREATE INDEX idx_31322_idx_a8faff51345bc702 ON pm922_stag.repair_reserve_fund_info (payee_vendor_id);
+2019-05-09T07:28:28.136000+01:00 NOTICE DONE copying pm922_stag.owner_broker_info
+2019-05-09T07:28:28.150000+01:00 NOTICE CREATE UNIQUE INDEX idx_30800_primary ON pm922_stag.owner_broker_info (id);
+2019-05-09T07:28:28.150000+01:00 NOTICE CREATE INDEX idx_30800_idx_56d69f776cc064fc ON pm922_stag.owner_broker_info (broker_id);
+2019-05-09T07:28:28.154000+01:00 NOTICE CREATE UNIQUE INDEX idx_30800_uniq_56d69f777e3c61f9 ON pm922_stag.owner_broker_info (owner_id);
+2019-05-09T07:28:28.155000+01:00 NOTICE CREATE INDEX idx_30800_owner_id ON pm922_stag.owner_broker_info (owner_id);
+2019-05-09T07:28:28.435000+01:00 NOTICE DONE copying pm922_stag.owner_income_info
+2019-05-09T07:28:28.447000+01:00 NOTICE CREATE INDEX idx_30812_owner_id ON pm922_stag.owner_income_info (owner_id);
+2019-05-09T07:28:28.447000+01:00 NOTICE CREATE UNIQUE INDEX idx_30812_uniq_727f8ff7e3c61f9 ON pm922_stag.owner_income_info (owner_id);
+2019-05-09T07:28:28.449000+01:00 NOTICE CREATE UNIQUE INDEX idx_30812_primary ON pm922_stag.owner_income_info (id);
+2019-05-09T07:28:28.982000+01:00 NOTICE DONE copying pm922_stag.owner_intl
+2019-05-09T07:28:28.982000+01:00 NOTICE DONE copying pm922_stag.room
+2019-05-09T07:28:29.003000+01:00 NOTICE CREATE INDEX idx_31334_idx_729f519bdaf6876d ON pm922_stag.room (construction_company_name_id);
+2019-05-09T07:28:29.003000+01:00 NOTICE CREATE INDEX idx_31334_property_id ON pm922_stag.room (property_id);
+2019-05-09T07:28:29.004000+01:00 NOTICE CREATE INDEX idx_31334_idx_729f519b1f897a7d ON pm922_stag.room (developer_name_id);
+2019-05-09T07:28:29.007000+01:00 NOTICE CREATE UNIQUE INDEX idx_30824_primary ON pm922_stag.owner_intl (id);
+2019-05-09T07:28:29.010000+01:00 NOTICE CREATE INDEX idx_30824_owner_id_idx ON pm922_stag.owner_intl (owner_id);
+2019-05-09T07:28:29.014000+01:00 NOTICE CREATE UNIQUE INDEX idx_31334_primary ON pm922_stag.room (id);
+2019-05-09T07:28:29.014000+01:00 NOTICE CREATE UNIQUE INDEX idx_31334_uniq_729f519b8db5a9d0 ON pm922_stag.room (external_room_id);
+2019-05-09T07:28:29.206000+01:00 NOTICE DONE copying pm922_stag.room_acquisition_info_intl
+2019-05-09T07:28:29.216000+01:00 NOTICE CREATE INDEX idx_31390_idx_7bbf0de578f51f0d ON pm922_stag.room_acquisition_info_intl (room_acquisition_info_id);
+2019-05-09T07:28:29.223000+01:00 NOTICE CREATE UNIQUE INDEX idx_31390_primary ON pm922_stag.room_acquisition_info_intl (id);
+2019-05-09T07:28:29.618000+01:00 NOTICE DONE copying pm922_stag.room_income_expenditure_info_intl
+2019-05-09T07:28:29.631000+01:00 NOTICE CREATE UNIQUE INDEX idx_31410_primary ON pm922_stag.room_income_expenditure_info_intl (id);
+2019-05-09T07:28:29.632000+01:00 NOTICE CREATE INDEX idx_31410_idx_7ec043333d64b08 ON pm922_stag.room_income_expenditure_info_intl (income_expenditure_info_id);
+2019-05-09T07:28:29.633000+01:00 NOTICE CREATE INDEX idx_31410_updated_at_idx ON pm922_stag.room_income_expenditure_info_intl (updated_at);
+2019-05-09T07:28:30.004000+01:00 NOTICE DONE copying pm922_stag.room_income_expenditure_info_tmp_intl
+2019-05-09T07:28:30.017000+01:00 NOTICE CREATE UNIQUE INDEX idx_31429_primary ON pm922_stag.room_income_expenditure_info_tmp_intl (id);
+2019-05-09T07:28:30.022000+01:00 NOTICE CREATE INDEX idx_31429_idx_6d3741ba9633697b ON pm922_stag.room_income_expenditure_info_tmp_intl (income_expenditure_info_tmp_id);
+2019-05-09T07:28:30.022000+01:00 NOTICE CREATE INDEX idx_31429_updated_at_idx ON pm922_stag.room_income_expenditure_info_tmp_intl (updated_at);
+2019-05-09T07:28:30.641000+01:00 NOTICE DONE copying pm922_stag.room_money_transfer_info
+2019-05-09T07:28:30.655000+01:00 NOTICE CREATE INDEX idx_31441_idx_rmti_rti ON pm922_stag.room_money_transfer_info (remittance_type_id);
+2019-05-09T07:28:30.662000+01:00 NOTICE CREATE INDEX idx_31441_idx_rmti_date ON pm922_stag.room_money_transfer_info (date);
+2019-05-09T07:28:30.662000+01:00 NOTICE CREATE INDEX idx_31441_idx_rmti_room_id ON pm922_stag.room_money_transfer_info (room_id);
+2019-05-09T07:28:30.664000+01:00 NOTICE CREATE UNIQUE INDEX idx_31441_primary ON pm922_stag.room_money_transfer_info (id);
+2019-05-09T07:28:30.665000+01:00 NOTICE CREATE INDEX idx_31441_idx_rmti_status ON pm922_stag.room_money_transfer_info (status);
+2019-05-09T07:28:30.665000+01:00 NOTICE CREATE INDEX idx_31441_gl_id ON pm922_stag.room_money_transfer_info (gl_id);
+2019-05-09T07:28:31.389000+01:00 NOTICE DONE copying pm922_stag.room_money_transfer_info_tmp
+2019-05-09T07:28:31.402000+01:00 NOTICE CREATE INDEX idx_31459_gl_id ON pm922_stag.room_money_transfer_info_tmp (gl_id);
+2019-05-09T07:28:31.408000+01:00 NOTICE CREATE INDEX idx_31459_idx_rmtit_date ON pm922_stag.room_money_transfer_info_tmp (date);
+2019-05-09T07:28:31.409000+01:00 NOTICE CREATE UNIQUE INDEX idx_31459_primary ON pm922_stag.room_money_transfer_info_tmp (id);
+2019-05-09T07:28:31.409000+01:00 NOTICE CREATE INDEX idx_31459_idx_rmtit_rti ON pm922_stag.room_money_transfer_info_tmp (remittance_type_id);
+2019-05-09T07:28:31.411000+01:00 NOTICE CREATE INDEX idx_31459_idx_rmtit_status ON pm922_stag.room_money_transfer_info_tmp (status);
+2019-05-09T07:28:31.412000+01:00 NOTICE CREATE INDEX idx_31459_idx_rmtit_room_id ON pm922_stag.room_money_transfer_info_tmp (room_id);
+2019-05-09T07:28:33.759000+01:00 NOTICE DONE copying pm922_stag.owner_invoice_publish
+2019-05-09T07:28:33.777000+01:00 NOTICE CREATE INDEX idx_30843_invoice_date_idx ON pm922_stag.owner_invoice_publish (invoice_date);
+2019-05-09T07:28:33.780000+01:00 NOTICE CREATE INDEX idx_30843_fk_0423456790 ON pm922_stag.owner_invoice_publish (gl_id);
+2019-05-09T07:28:33.781000+01:00 NOTICE CREATE INDEX idx_30843_fk_1c13919be0b6648d_idx ON pm922_stag.owner_invoice_publish (invoice_item_id);
+2019-05-09T07:28:33.783000+01:00 NOTICE CREATE UNIQUE INDEX idx_30843_primary ON pm922_stag.owner_invoice_publish (id);
+2019-05-09T07:28:33.785000+01:00 NOTICE CREATE INDEX idx_30843_updated_at_idx ON pm922_stag.owner_invoice_publish (updated_at);
+2019-05-09T07:28:33.786000+01:00 NOTICE CREATE UNIQUE INDEX idx_30843_uniq_1c13919b345bc702 ON pm922_stag.owner_invoice_publish (payee_vendor_id);
+2019-05-09T07:28:33.786000+01:00 NOTICE CREATE INDEX idx_30843_idx_oip_1c13919b54177093 ON pm922_stag.owner_invoice_publish (room_id);
+2019-05-09T07:28:34.129000+01:00 NOTICE DONE copying pm922_stag.owner_loan_info_intl
+2019-05-09T07:28:34.140000+01:00 NOTICE CREATE INDEX idx_30859_idx_763366af77198d46 ON pm922_stag.owner_loan_info_intl (owner_loan_info_id);
+2019-05-09T07:28:34.146000+01:00 NOTICE CREATE UNIQUE INDEX idx_30859_primary ON pm922_stag.owner_loan_info_intl (id);
+2019-05-09T07:28:34.721000+01:00 NOTICE DONE copying pm922_stag.owner_room
+2019-05-09T07:28:34.733000+01:00 NOTICE CREATE INDEX idx_30875_owner_room_idex ON pm922_stag.owner_room (owner_id, room_id);
+2019-05-09T07:28:34.733000+01:00 NOTICE CREATE INDEX idx_30875_idx_e439320b7e3c61f9 ON pm922_stag.owner_room (owner_id);
+2019-05-09T07:28:34.738000+01:00 NOTICE CREATE INDEX idx_30875_idx_e439320b54177093 ON pm922_stag.owner_room (room_id);
+2019-05-09T07:28:34.738000+01:00 NOTICE CREATE UNIQUE INDEX idx_30875_primary ON pm922_stag.owner_room (id);
+2019-05-09T07:28:35.050000+01:00 NOTICE DONE copying pm922_stag.owner_work_info_intl
+2019-05-09T07:28:35.063000+01:00 NOTICE CREATE UNIQUE INDEX idx_30888_primary ON pm922_stag.owner_work_info_intl (id);
+2019-05-09T07:28:35.063000+01:00 NOTICE CREATE INDEX idx_30888_idx_5568f2608c9dbb10 ON pm922_stag.owner_work_info_intl (owner_work_info_id);
+2019-05-09T07:28:35.458000+01:00 NOTICE DONE copying pm922_stag.parking_facilities_intl
+2019-05-09T07:28:35.471000+01:00 NOTICE CREATE INDEX idx_30903_parking_facility_id_idx ON pm922_stag.parking_facilities_intl (parking_facility_id);
+2019-05-09T07:28:35.471000+01:00 NOTICE CREATE UNIQUE INDEX idx_30903_primary ON pm922_stag.parking_facilities_intl (id);
+2019-05-09T07:28:35.638000+01:00 NOTICE DONE copying pm922_stag.room_pl_info
+2019-05-09T07:28:35.653000+01:00 NOTICE CREATE UNIQUE INDEX idx_31477_primary ON pm922_stag.room_pl_info (id);
+2019-05-09T07:28:35.845000+01:00 NOTICE DONE copying pm922_stag.payee_vendor_intl
+2019-05-09T07:28:35.857000+01:00 NOTICE CREATE UNIQUE INDEX idx_30919_primary ON pm922_stag.payee_vendor_intl (id);
+2019-05-09T07:28:35.859000+01:00 NOTICE CREATE INDEX idx_30919_idx_742f0762345bc702 ON pm922_stag.payee_vendor_intl (payee_vendor_id);
+2019-05-09T07:28:35.935000+01:00 NOTICE DONE copying pm922_stag.setting_history
+2019-05-09T07:28:35.948000+01:00 NOTICE CREATE UNIQUE INDEX idx_31493_primary ON pm922_stag.setting_history (id);
+2019-05-09T07:28:36.165000+01:00 NOTICE DONE copying pm922_stag.station_log
+2019-05-09T07:28:36.176000+01:00 NOTICE CREATE UNIQUE INDEX idx_31511_primary ON pm922_stag.station_log (id);
+2019-05-09T07:28:36.527000+01:00 NOTICE DONE copying pm922_stag.tax_agent_contract
+2019-05-09T07:28:36.542000+01:00 NOTICE CREATE INDEX idx_31523_property_id ON pm922_stag.tax_agent_contract (property_id);
+2019-05-09T07:28:36.542000+01:00 NOTICE CREATE UNIQUE INDEX idx_31523_uniq_291953bd7e3c61f9 ON pm922_stag.tax_agent_contract (owner_id);
+2019-05-09T07:28:36.544000+01:00 NOTICE CREATE INDEX idx_31523_owner_id ON pm922_stag.tax_agent_contract (owner_id);
+2019-05-09T07:28:36.545000+01:00 NOTICE CREATE UNIQUE INDEX idx_31523_primary ON pm922_stag.tax_agent_contract (id);
+2019-05-09T07:28:36.956000+01:00 NOTICE DONE copying pm922_stag.tax_classification_info
+2019-05-09T07:28:36.970000+01:00 NOTICE CREATE INDEX idx_31539_owner_id ON pm922_stag.tax_classification_info (owner_id);
+2019-05-09T07:28:36.971000+01:00 NOTICE CREATE UNIQUE INDEX idx_31539_primary ON pm922_stag.tax_classification_info (id);
+2019-05-09T07:28:36.971000+01:00 NOTICE CREATE UNIQUE INDEX idx_31539_uniq_10f23cd07e3c61f9 ON pm922_stag.tax_classification_info (owner_id);
+2019-05-09T07:28:37.637000+01:00 NOTICE DONE copying pm922_stag.tenant
+2019-05-09T07:28:37.651000+01:00 NOTICE CREATE UNIQUE INDEX idx_31551_primary ON pm922_stag.tenant (id);
+2019-05-09T07:28:37.653000+01:00 NOTICE CREATE INDEX idx_31551_country_id_idx ON pm922_stag.tenant (country_id);
+2019-05-09T07:28:37.653000+01:00 NOTICE CREATE UNIQUE INDEX idx_31551_uniq_4e59c462b4688e3e ON pm922_stag.tenant (external_tenant_id);
+2019-05-09T07:28:38.814000+01:00 NOTICE DONE copying pm922_stag.tenant_info_intl
+2019-05-09T07:28:38.825000+01:00 NOTICE CREATE UNIQUE INDEX idx_31586_primary ON pm922_stag.tenant_info_intl (id);
+2019-05-09T07:28:38.831000+01:00 NOTICE CREATE INDEX idx_31586_idx_50e7036d4f1d83cc ON pm922_stag.tenant_info_intl (tenant_info_id);
+2019-05-09T07:28:39.455000+01:00 NOTICE DONE copying pm922_stag.tenant_work_info
+2019-05-09T07:28:39.466000+01:00 NOTICE CREATE UNIQUE INDEX idx_31604_uniq_11b241b29033212a ON pm922_stag.tenant_work_info (tenant_id);
+2019-05-09T07:28:39.472000+01:00 NOTICE CREATE UNIQUE INDEX idx_31604_primary ON pm922_stag.tenant_work_info (id);
+2019-05-09T07:28:40.520000+01:00 NOTICE DONE copying pm922_stag."user"
+2019-05-09T07:28:40.534000+01:00 NOTICE CREATE INDEX idx_31619_fk_8d93d6497e9e4c8c ON pm922_stag."user" (photo_id);
+2019-05-09T07:28:40.539000+01:00 NOTICE CREATE UNIQUE INDEX idx_31619_primary ON pm922_stag."user" (id);
+2019-05-09T07:28:40.542000+01:00 NOTICE CREATE INDEX idx_31619_type_id ON pm922_stag."user" (type_id);
+2019-05-09T07:28:40.542000+01:00 NOTICE CREATE UNIQUE INDEX idx_31619_uniq_8d93d64992fc23a8 ON pm922_stag."user" (username_canonical);
+2019-05-09T07:28:40.543000+01:00 NOTICE CREATE UNIQUE INDEX idx_31619_uniq_email ON pm922_stag."user" (email);
+2019-05-09T07:28:40.543000+01:00 NOTICE CREATE UNIQUE INDEX idx_31619_uniq_8d93d649a0d96fbf ON pm922_stag."user" (email_canonical);
+2019-05-09T07:28:41.717000+01:00 NOTICE DONE copying pm922_stag.user_type
+2019-05-09T07:28:41.727000+01:00 NOTICE CREATE UNIQUE INDEX idx_31637_primary ON pm922_stag.user_type (id);
+2019-05-09T07:28:42.794000+01:00 NOTICE DONE copying pm922_stag.vendor_invoice_item_info
+2019-05-09T07:28:42.811000+01:00 NOTICE CREATE INDEX idx_31649_vendor_invoice_item_info_idx ON pm922_stag.vendor_invoice_item_info (payee_vendor_id, invoice_item_id);
+2019-05-09T07:28:42.813000+01:00 NOTICE CREATE UNIQUE INDEX idx_31649_primary ON pm922_stag.vendor_invoice_item_info (id);
+2019-05-09T07:28:42.814000+01:00 NOTICE CREATE INDEX idx_31649_idx_4267c61de0b6648d ON pm922_stag.vendor_invoice_item_info (invoice_item_id);
+2019-05-09T07:28:42.814000+01:00 NOTICE CREATE INDEX idx_31649_idx_4267c61d345bc702 ON pm922_stag.vendor_invoice_item_info (payee_vendor_id);
+2019-05-09T07:28:43.833000+01:00 NOTICE DONE copying pm922_stag.zip_log
+2019-05-09T07:28:43.847000+01:00 NOTICE CREATE UNIQUE INDEX idx_31661_primary ON pm922_stag.zip_log (id);
+2019-05-09T07:28:45.449000+01:00 NOTICE DONE copying pm922_stag.payment_match_publish
+2019-05-09T07:28:45.461000+01:00 NOTICE CREATE UNIQUE INDEX idx_30938_primary ON pm922_stag.payment_match_publish (id);
+2019-05-09T07:28:45.462000+01:00 NOTICE CREATE INDEX idx_30938_rental_payment_id_idx ON pm922_stag.payment_match_publish (rental_payment_id);
+2019-05-09T07:28:45.463000+01:00 NOTICE CREATE INDEX idx_30938_gl_id ON pm922_stag.payment_match_publish (gl_id);
+2019-05-09T07:28:45.467000+01:00 NOTICE CREATE INDEX idx_30938_invoice_id_idx ON pm922_stag.payment_match_publish (invoice_id);
+2019-05-09T07:28:45.877000+01:00 NOTICE DONE copying pm922_stag.payment_type_intl
+2019-05-09T07:28:45.889000+01:00 NOTICE CREATE UNIQUE INDEX idx_30959_primary ON pm922_stag.payment_type_intl (id);
+2019-05-09T07:28:45.894000+01:00 NOTICE CREATE INDEX idx_30959_name_index ON pm922_stag.payment_type_intl (name);
+2019-05-09T07:28:45.894000+01:00 NOTICE CREATE INDEX idx_30959_idx_be52fa1edc058279 ON pm922_stag.payment_type_intl (payment_type_id);
+2019-05-09T07:28:46.161000+01:00 NOTICE DONE copying pm922_stag.photo
+2019-05-09T07:28:46.179000+01:00 NOTICE CREATE UNIQUE INDEX idx_30975_primary ON pm922_stag.photo (id);
+2019-05-09T07:28:46.412000+01:00 NOTICE DONE copying pm922_stag.postal_code
+2019-05-09T07:28:46.430000+01:00 NOTICE CREATE INDEX idx_30991_country_id_idx ON pm922_stag.postal_code (country_id);
+2019-05-09T07:28:46.430000+01:00 NOTICE CREATE UNIQUE INDEX idx_30991_primary ON pm922_stag.postal_code (postal_code);
+2019-05-09T07:28:46.431000+01:00 NOTICE CREATE INDEX idx_30991_prefecture_id_idx ON pm922_stag.postal_code (prefecture_id);
+2019-05-09T07:28:46.686000+01:00 NOTICE DONE copying pm922_stag.prefecture_line_info
+2019-05-09T07:28:46.698000+01:00 NOTICE CREATE INDEX idx_31000_idx_58ee8cf5b7949dc8 ON pm922_stag.prefecture_line_info (line_cd);
+2019-05-09T07:28:46.704000+01:00 NOTICE CREATE INDEX idx_31000_idx_58ee8cf59d39c865 ON pm922_stag.prefecture_line_info (prefecture_id);
+2019-05-09T07:28:46.704000+01:00 NOTICE CREATE UNIQUE INDEX idx_31000_primary ON pm922_stag.prefecture_line_info (prefecture_id, line_cd);
+2019-05-09T07:28:46.970000+01:00 NOTICE DONE copying pm922_stag.prime_broker_intl
+2019-05-09T07:28:46.983000+01:00 NOTICE CREATE INDEX idx_31014_idx_7d8d780e640841e ON pm922_stag.prime_broker_intl (prime_broker_id);
+2019-05-09T07:28:46.983000+01:00 NOTICE CREATE UNIQUE INDEX idx_31014_primary ON pm922_stag.prime_broker_intl (id);
+2019-05-09T07:28:47.382000+01:00 NOTICE DONE copying pm922_stag.property_acquisition_info
+2019-05-09T07:28:47.395000+01:00 NOTICE CREATE UNIQUE INDEX idx_31031_primary ON pm922_stag.property_acquisition_info (id);
+2019-05-09T07:28:47.401000+01:00 NOTICE CREATE INDEX idx_31031_idx_fab7d0e7e3c61f9 ON pm922_stag.property_acquisition_info (owner_id);
+2019-05-09T07:28:47.402000+01:00 NOTICE CREATE UNIQUE INDEX idx_31031_uniq_fab7d0e5276cc6a ON pm922_stag.property_acquisition_info (owner_property_id);
+2019-05-09T07:28:47.402000+01:00 NOTICE CREATE INDEX idx_31031_property_id ON pm922_stag.property_acquisition_info (property_id);
+2019-05-09T07:28:47.607000+01:00 NOTICE DONE copying pm922_stag.property_addresses
+2019-05-09T07:28:47.619000+01:00 NOTICE CREATE UNIQUE INDEX idx_31084_primary ON pm922_stag.property_addresses (id);
+2019-05-09T07:28:47.620000+01:00 NOTICE CREATE INDEX idx_31084_property_address_status_idx ON pm922_stag.property_addresses (property_address_status_id);
+2019-05-09T07:28:47.878000+01:00 NOTICE DONE copying pm922_stag.property_address_status
+2019-05-09T07:28:47.889000+01:00 NOTICE CREATE UNIQUE INDEX idx_31096_primary ON pm922_stag.property_address_status (id);
+2019-05-09T07:28:47.890000+01:00 NOTICE CREATE UNIQUE INDEX idx_31096_uniq_969d3ba7549213ec ON pm922_stag.property_address_status (property_id);
+2019-05-09T07:28:48.169000+01:00 NOTICE DONE copying pm922_stag.property_facilities
+2019-05-09T07:28:48.182000+01:00 NOTICE CREATE INDEX idx_31108_idx_1849a5e6a7014910 ON pm922_stag.property_facilities (facility_id);
+2019-05-09T07:28:48.182000+01:00 NOTICE CREATE UNIQUE INDEX idx_31108_primary ON pm922_stag.property_facilities (id);
+2019-05-09T07:28:48.183000+01:00 NOTICE CREATE INDEX idx_31108_idx_1849a5e6f4770a29 ON pm922_stag.property_facilities (feature_information_management_id);
+2019-05-09T07:28:48.439000+01:00 NOTICE DONE copying pm922_stag.property_features
+2019-05-09T07:28:48.452000+01:00 NOTICE CREATE UNIQUE INDEX idx_31120_primary ON pm922_stag.property_features (id);
+2019-05-09T07:28:48.452000+01:00 NOTICE CREATE INDEX idx_31120_idx_e147e857f4770a29 ON pm922_stag.property_features (feature_information_management_id);
+2019-05-09T07:28:48.457000+01:00 NOTICE CREATE INDEX idx_31120_idx_e147e85760e4b879 ON pm922_stag.property_features (feature_id);
+2019-05-09T07:28:48.727000+01:00 NOTICE DONE copying pm922_stag.property_income_expenditure_info
+2019-05-09T07:28:48.738000+01:00 NOTICE CREATE INDEX idx_31132_date_idx ON pm922_stag.property_income_expenditure_info (date);
+2019-05-09T07:28:48.745000+01:00 NOTICE CREATE UNIQUE INDEX idx_31132_primary ON pm922_stag.property_income_expenditure_info (id);
+2019-05-09T07:28:48.745000+01:00 NOTICE CREATE INDEX idx_31132_property_id ON pm922_stag.property_income_expenditure_info (property_id);
+2019-05-09T07:28:48.746000+01:00 NOTICE CREATE INDEX idx_31132_updated_at_idx ON pm922_stag.property_income_expenditure_info (updated_at);
+2019-05-09T07:28:48.746000+01:00 NOTICE CREATE INDEX idx_31132_idx_407a215be0b6648d ON pm922_stag.property_income_expenditure_info (invoice_item_id);
+2019-05-09T07:28:49.373000+01:00 NOTICE DONE copying pm922_stag.property_income_expenditure_info_tmp
+2019-05-09T07:28:49.385000+01:00 NOTICE CREATE INDEX idx_31149_idx_e70b102ae0b6648d ON pm922_stag.property_income_expenditure_info_tmp (invoice_item_id);
+2019-05-09T07:28:49.385000+01:00 NOTICE CREATE UNIQUE INDEX idx_31149_primary ON pm922_stag.property_income_expenditure_info_tmp (id);
+2019-05-09T07:28:49.393000+01:00 NOTICE CREATE INDEX idx_31149_updated_at_idx ON pm922_stag.property_income_expenditure_info_tmp (updated_at);
+2019-05-09T07:28:49.394000+01:00 NOTICE CREATE INDEX idx_31149_date_idx ON pm922_stag.property_income_expenditure_info_tmp (date);
+2019-05-09T07:28:49.394000+01:00 NOTICE CREATE INDEX idx_31149_property_id ON pm922_stag.property_income_expenditure_info_tmp (property_id);
+2019-05-09T07:28:50.311000+01:00 NOTICE DONE copying pm922_stag.property_intl
+2019-05-09T07:28:50.322000+01:00 NOTICE CREATE UNIQUE INDEX idx_31162_primary ON pm922_stag.property_intl (id);
+2019-05-09T07:28:50.324000+01:00 NOTICE CREATE INDEX idx_31162_property_id_idx ON pm922_stag.property_intl (property_id);
+2019-05-09T07:28:51.200000+01:00 NOTICE DONE copying pm922_stag.property_repair_info
+2019-05-09T07:28:51.229000+01:00 NOTICE CREATE UNIQUE INDEX idx_31180_uniq_a1ca25812989f1fd ON pm922_stag.property_repair_info (invoice_id);
+2019-05-09T07:28:51.231000+01:00 NOTICE CREATE INDEX idx_31180_room_id ON pm922_stag.property_repair_info (room_id);
+2019-05-09T07:28:51.232000+01:00 NOTICE CREATE UNIQUE INDEX idx_31180_primary ON pm922_stag.property_repair_info (id);
+2019-05-09T07:28:51.232000+01:00 NOTICE CREATE UNIQUE INDEX idx_31180_uniq_a1ca2581d948ee2 ON pm922_stag.property_repair_info (serial_number);
+2019-05-09T07:28:52.083000+01:00 NOTICE DONE copying pm922_stag.property_tag
+2019-05-09T07:28:52.095000+01:00 NOTICE CREATE INDEX idx_31192_property_id ON pm922_stag.property_tag (property_id);
+2019-05-09T07:28:52.095000+01:00 NOTICE CREATE INDEX idx_31192_tag_id ON pm922_stag.property_tag (tag_id);
+2019-05-09T07:28:52.101000+01:00 NOTICE CREATE UNIQUE INDEX idx_31192_primary ON pm922_stag.property_tag (id);
+2019-05-09T07:28:52.449000+01:00 NOTICE DONE copying pm922_stag.railway_line_log
+2019-05-09T07:28:52.466000+01:00 NOTICE CREATE UNIQUE INDEX idx_31204_primary ON pm922_stag.railway_line_log (id);
+2019-05-09T07:28:52.726000+01:00 NOTICE DONE copying pm922_stag.registration_of_address_info
+2019-05-09T07:28:52.742000+01:00 NOTICE CREATE INDEX idx_31219_registration_of_address_info_property_id ON pm922_stag.registration_of_address_info (property_id);
+2019-05-09T07:28:52.743000+01:00 NOTICE CREATE UNIQUE INDEX idx_31219_primary ON pm922_stag.registration_of_address_info (id);
+2019-05-09T07:28:52.997000+01:00 NOTICE DONE copying pm922_stag.remittance_type_intl
+2019-05-09T07:28:53.007000+01:00 NOTICE CREATE UNIQUE INDEX idx_31235_primary ON pm922_stag.remittance_type_intl (id);
+2019-05-09T07:28:53.013000+01:00 NOTICE CREATE INDEX idx_31235_idx_167e15e8e872685c ON pm922_stag.remittance_type_intl (remittance_type_id);
+2019-05-09T07:28:53.268000+01:00 NOTICE DONE copying pm922_stag.rental_contract_cancellation
+2019-05-09T07:28:53.279000+01:00 NOTICE CREATE UNIQUE INDEX idx_31250_primary ON pm922_stag.rental_contract_cancellation (id);
+2019-05-09T07:28:53.279000+01:00 NOTICE CREATE INDEX idx_31250_idx_e5c9c0172576e0fd ON pm922_stag.rental_contract_cancellation (contract_id);
+2019-05-09T07:28:53.284000+01:00 NOTICE CREATE UNIQUE INDEX idx_31250_uniq_e5c9c0172576e0fd ON pm922_stag.rental_contract_cancellation (contract_id);
+2019-05-09T07:28:53.852000+01:00 NOTICE DONE copying pm922_stag.rental_contract_info
+2019-05-09T07:28:53.863000+01:00 NOTICE CREATE UNIQUE INDEX idx_31266_uniq_fb70241d2576e0fd ON pm922_stag.rental_contract_info (contract_id);
+2019-05-09T07:28:53.863000+01:00 NOTICE CREATE UNIQUE INDEX idx_31266_primary ON pm922_stag.rental_contract_info (id);
+2019-05-09T07:28:53.868000+01:00 NOTICE CREATE INDEX idx_31266_contract_id_idx ON pm922_stag.rental_contract_info (contract_id);
+2019-05-09T07:28:54.112000+01:00 NOTICE DONE copying pm922_stag.rental_contract_renew_info
+2019-05-09T07:28:54.123000+01:00 NOTICE CREATE UNIQUE INDEX idx_31285_primary ON pm922_stag.rental_contract_renew_info (id);
+2019-05-09T07:28:54.129000+01:00 NOTICE CREATE INDEX idx_31285_contract_id_idx ON pm922_stag.rental_contract_renew_info (contract_id);
+2019-05-09T07:29:10.417000+01:00 NOTICE DONE copying pm922_stag.rental_payment
+2019-05-09T07:29:10.434000+01:00 NOTICE CREATE INDEX idx_31301_tenant_id_idx ON pm922_stag.rental_payment (tenant_id);
+2019-05-09T07:29:10.437000+01:00 NOTICE CREATE INDEX idx_31301_payment_date_idx ON pm922_stag.rental_payment (payment_date);
+2019-05-09T07:29:10.438000+01:00 NOTICE CREATE INDEX idx_31301_gl_id ON pm922_stag.rental_payment (gl_id);
+2019-05-09T07:29:10.441000+01:00 NOTICE CREATE INDEX idx_31301_updated_at_idx ON pm922_stag.rental_payment (updated_at);
+2019-05-09T07:29:10.442000+01:00 NOTICE CREATE INDEX idx_31301_room_id_idx ON pm922_stag.rental_payment (room_id);
+2019-05-09T07:29:10.451000+01:00 NOTICE CREATE UNIQUE INDEX idx_31301_primary ON pm922_stag.rental_payment (id);
+2019-05-09T07:29:10.975000+01:00 NOTICE DONE copying pm922_stag.repair_invoice_tenant
+2019-05-09T07:29:10.985000+01:00 NOTICE CREATE INDEX idx_31316_idx_repair_invoice_tenant_id ON pm922_stag.repair_invoice_tenant (tenant_id);
+2019-05-09T07:29:11.623000+01:00 NOTICE CREATE INDEX idx_31316_idx_repair_invoice_tenant_property_repair_info_id ON pm922_stag.repair_invoice_tenant (property_repair_info_id);
+2019-05-09T07:29:11.625000+01:00 NOTICE CREATE UNIQUE INDEX idx_31316_primary ON pm922_stag.repair_invoice_tenant (id);
+2019-05-09T07:29:11.625000+01:00 NOTICE CREATE UNIQUE INDEX idx_31316_uniq_4d8403462989f1fd ON pm922_stag.repair_invoice_tenant (invoice_id);
+2019-05-09T07:29:11.700000+01:00 NOTICE DONE copying pm922_stag.repair_reserve_fund_info_intl
+2019-05-09T07:29:11.713000+01:00 NOTICE CREATE INDEX idx_31328_idx_72aa4048c573676f ON pm922_stag.repair_reserve_fund_info_intl (repair_reserve_fund_info_id);
+2019-05-09T07:29:11.714000+01:00 NOTICE CREATE UNIQUE INDEX idx_31328_primary ON pm922_stag.repair_reserve_fund_info_intl (id);
+2019-05-09T07:29:12.005000+01:00 NOTICE DONE copying pm922_stag.room_acquisition_info
+2019-05-09T07:29:12.019000+01:00 NOTICE CREATE INDEX idx_31346_room_id ON pm922_stag.room_acquisition_info (room_id);
+2019-05-09T07:29:12.020000+01:00 NOTICE CREATE UNIQUE INDEX idx_31346_primary ON pm922_stag.room_acquisition_info (id);
+2019-05-09T07:29:12.020000+01:00 NOTICE CREATE UNIQUE INDEX idx_31346_uniq_f80dd4dd54177093 ON pm922_stag.room_acquisition_info (room_id);
+2019-05-09T07:29:24.220000+01:00 NOTICE DONE copying pm922_stag.room_income_expenditure_info
+2019-05-09T07:29:24.234000+01:00 NOTICE CREATE INDEX idx_31399_updated_at_idx ON pm922_stag.room_income_expenditure_info (updated_at);
+2019-05-09T07:29:24.235000+01:00 NOTICE CREATE INDEX idx_31399_room_id ON pm922_stag.room_income_expenditure_info (room_id);
+2019-05-09T07:29:24.241000+01:00 NOTICE CREATE INDEX idx_31399_idx_943c8de0b6648d ON pm922_stag.room_income_expenditure_info (invoice_item_id);
+2019-05-09T07:29:24.241000+01:00 NOTICE CREATE INDEX idx_31399_gl_id ON pm922_stag.room_income_expenditure_info (gl_id);
+2019-05-09T07:29:24.245000+01:00 NOTICE CREATE UNIQUE INDEX idx_31399_primary ON pm922_stag.room_income_expenditure_info (id);
+2019-05-09T07:29:24.256000+01:00 NOTICE CREATE INDEX idx_31399_date_idx ON pm922_stag.room_income_expenditure_info (date);
+2019-05-09T07:29:40.583000+01:00 NOTICE DONE copying pm922_stag.room_income_expenditure_info_tmp
+2019-05-09T07:29:40.595000+01:00 NOTICE CREATE INDEX idx_31419_date_idx ON pm922_stag.room_income_expenditure_info_tmp (date);
+2019-05-09T07:29:40.604000+01:00 NOTICE CREATE INDEX idx_31419_idx_46eb59bee0b6648d ON pm922_stag.room_income_expenditure_info_tmp (invoice_item_id);
+2019-05-09T07:29:40.604000+01:00 NOTICE CREATE INDEX idx_31419_updated_at_idx ON pm922_stag.room_income_expenditure_info_tmp (updated_at);
+2019-05-09T07:29:40.606000+01:00 NOTICE CREATE UNIQUE INDEX idx_31419_primary ON pm922_stag.room_income_expenditure_info_tmp (id);
+2019-05-09T07:29:40.608000+01:00 NOTICE CREATE INDEX idx_31419_gl_id ON pm922_stag.room_income_expenditure_info_tmp (gl_id);
+2019-05-09T07:29:40.627000+01:00 NOTICE CREATE INDEX idx_31419_room_id ON pm922_stag.room_income_expenditure_info_tmp (room_id);
+2019-05-09T07:29:41.333000+01:00 NOTICE DONE copying pm922_stag.room_intl
+2019-05-09T07:29:41.344000+01:00 NOTICE CREATE UNIQUE INDEX idx_31435_primary ON pm922_stag.room_intl (id);
+2019-05-09T07:29:41.345000+01:00 NOTICE CREATE INDEX idx_31435_room_id_idx ON pm922_stag.room_intl (room_id);
+2019-05-09T07:29:41.555000+01:00 NOTICE DONE copying pm922_stag.room_money_transfer_info_intl
+2019-05-09T07:29:41.572000+01:00 NOTICE CREATE INDEX idx_31450_idx_rmtii_pid ON pm922_stag.room_money_transfer_info_intl (room_money_transfer_info_id);
+2019-05-09T07:29:41.669000+01:00 NOTICE CREATE UNIQUE INDEX idx_31450_primary ON pm922_stag.room_money_transfer_info_intl (id);
+2019-05-09T07:29:41.882000+01:00 NOTICE DONE copying pm922_stag.room_money_transfer_info_tmp_intl
+2019-05-09T07:29:41.895000+01:00 NOTICE CREATE UNIQUE INDEX idx_31468_primary ON pm922_stag.room_money_transfer_info_tmp_intl (id);
+2019-05-09T07:29:41.895000+01:00 NOTICE CREATE INDEX idx_31468_idx_rmtiti_pid ON pm922_stag.room_money_transfer_info_tmp_intl (room_money_transfer_info_tmp_id);
+2019-05-09T07:29:42.220000+01:00 NOTICE DONE copying pm922_stag.setting
+2019-05-09T07:29:42.230000+01:00 NOTICE CREATE UNIQUE INDEX idx_31484_name_unique ON pm922_stag.setting (name);
+2019-05-09T07:29:42.236000+01:00 NOTICE CREATE UNIQUE INDEX idx_31484_primary ON pm922_stag.setting (id);
+2019-05-09T07:29:42.621000+01:00 NOTICE DONE copying pm922_stag.station
+2019-05-09T07:29:42.632000+01:00 NOTICE CREATE UNIQUE INDEX idx_31502_primary ON pm922_stag.station (id);
+2019-05-09T07:29:42.639000+01:00 NOTICE CREATE INDEX idx_31502_line_cd_idx ON pm922_stag.station (line_cd);
+2019-05-09T07:29:42.911000+01:00 NOTICE DONE copying pm922_stag.tags
+2019-05-09T07:29:42.923000+01:00 NOTICE CREATE UNIQUE INDEX idx_31517_id_unique ON pm922_stag.tags (id);
+2019-05-09T07:29:42.924000+01:00 NOTICE CREATE UNIQUE INDEX idx_31517_primary ON pm922_stag.tags (id);
+2019-05-09T07:29:43.202000+01:00 NOTICE DONE copying pm922_stag.tax_agent_contract_intl
+2019-05-09T07:29:43.214000+01:00 NOTICE CREATE INDEX idx_31530_tax_agent_contract_id_idx ON pm922_stag.tax_agent_contract_intl (tax_agent_contract_id);
+2019-05-09T07:29:43.219000+01:00 NOTICE CREATE UNIQUE INDEX idx_31530_primary ON pm922_stag.tax_agent_contract_intl (id);
+2019-05-09T07:29:43.512000+01:00 NOTICE DONE copying pm922_stag.tax_classification_info_intl
+2019-05-09T07:29:43.524000+01:00 NOTICE CREATE UNIQUE INDEX idx_31545_primary ON pm922_stag.tax_classification_info_intl (id);
+2019-05-09T07:29:43.525000+01:00 NOTICE CREATE INDEX idx_31545_tax_classification_info_id_idx ON pm922_stag.tax_classification_info_intl (tax_classification_info_id);
+2019-05-09T07:29:44.462000+01:00 NOTICE DONE copying pm922_stag.tenant_info
+2019-05-09T07:29:44.475000+01:00 NOTICE CREATE UNIQUE INDEX idx_31580_primary ON pm922_stag.tenant_info (id);
+2019-05-09T07:29:44.481000+01:00 NOTICE CREATE INDEX idx_31580_tenant_id ON pm922_stag.tenant_info (tenant_id);
+2019-05-09T07:29:46.171000+01:00 NOTICE DONE copying pm922_stag.tenant_intl
+2019-05-09T07:29:46.186000+01:00 NOTICE CREATE INDEX idx_31595_idx_601b4aed9033212a ON pm922_stag.tenant_intl (tenant_id);
+2019-05-09T07:29:46.186000+01:00 NOTICE CREATE UNIQUE INDEX idx_31595_primary ON pm922_stag.tenant_intl (id);
+2019-05-09T07:29:47.038000+01:00 NOTICE DONE copying pm922_stag.tenant_work_info_intl
+2019-05-09T07:29:47.050000+01:00 NOTICE CREATE INDEX idx_31610_idx_abfd0d676c9643bb ON pm922_stag.tenant_work_info_intl (tenant_work_info_id);
+2019-05-09T07:29:47.050000+01:00 NOTICE CREATE UNIQUE INDEX idx_31610_primary ON pm922_stag.tenant_work_info_intl (id);
+2019-05-09T07:29:47.829000+01:00 NOTICE DONE copying pm922_stag.user_login_log
+2019-05-09T07:29:47.840000+01:00 NOTICE CREATE INDEX idx_31628_user_login_user_id_indx ON pm922_stag.user_login_log (user_id);
+2019-05-09T07:29:47.841000+01:00 NOTICE CREATE UNIQUE INDEX idx_31628_primary ON pm922_stag.user_login_log (id);
+2019-05-09T07:29:48.143000+01:00 NOTICE DONE copying pm922_stag.vendor_industry_type_info
+2019-05-09T07:29:48.155000+01:00 NOTICE CREATE INDEX idx_31643_idx_c48ff6dd345bc702 ON pm922_stag.vendor_industry_type_info (payee_vendor_id);
+2019-05-09T07:29:48.155000+01:00 NOTICE CREATE INDEX idx_31643_idx_c48ff6ddf2d3bae6 ON pm922_stag.vendor_industry_type_info (industry_type_id);
+2019-05-09T07:29:48.160000+01:00 NOTICE CREATE UNIQUE INDEX idx_31643_primary ON pm922_stag.vendor_industry_type_info (id);
+2019-05-09T07:29:48.161000+01:00 NOTICE CREATE INDEX idx_31643_vendor_industry_type_info_idx ON pm922_stag.vendor_industry_type_info (payee_vendor_id, industry_type_id);
+2019-05-09T07:30:01.105000+01:00 NOTICE DONE copying pm922_stag.zip_code
+2019-05-09T07:30:01.117000+01:00 NOTICE CREATE UNIQUE INDEX idx_31655_primary ON pm922_stag.zip_code (id);
+2019-05-09T07:30:01.304000+01:00 NOTICE Completing PostgreSQL database.
+2019-05-09T07:30:01.304000+01:00 NOTICE Reset sequences
+2019-05-09T07:30:01.391000+01:00 NOTICE ALTER TABLE pm922_stag.assets_management_contract ADD PRIMARY KEY USING INDEX idx_30327_primary;
+2019-05-09T07:30:01.392000+01:00 NOTICE ALTER TABLE pm922_stag.access_tokens ADD PRIMARY KEY USING INDEX idx_30318_primary;
+2019-05-09T07:30:01.393000+01:00 NOTICE ALTER TABLE pm922_stag.bathroom_info ADD PRIMARY KEY USING INDEX idx_30349_primary;
+2019-05-09T07:30:01.393000+01:00 NOTICE ALTER TABLE pm922_stag.assets_management_contract_intl ADD PRIMARY KEY USING INDEX idx_30343_primary;
+2019-05-09T07:30:01.394000+01:00 NOTICE ALTER TABLE pm922_stag.bedroom_info ADD PRIMARY KEY USING INDEX idx_30355_primary;
+2019-05-09T07:30:01.394000+01:00 NOTICE ALTER TABLE pm922_stag.category ADD PRIMARY KEY USING INDEX idx_30361_primary;
+2019-05-09T07:30:01.394000+01:00 NOTICE ALTER TABLE pm922_stag.company_info ADD PRIMARY KEY USING INDEX idx_30373_primary;
+2019-05-09T07:30:01.395000+01:00 NOTICE ALTER TABLE pm922_stag.category_intl ADD PRIMARY KEY USING INDEX idx_30367_primary;
+2019-05-09T07:30:01.395000+01:00 NOTICE ALTER TABLE pm922_stag.company_info_intl ADD PRIMARY KEY USING INDEX idx_30382_primary;
+2019-05-09T07:30:01.396000+01:00 NOTICE ALTER TABLE pm922_stag.connecting_road ADD PRIMARY KEY USING INDEX idx_30391_primary;
+2019-05-09T07:30:01.396000+01:00 NOTICE ALTER TABLE pm922_stag.connecting_road_intl ADD PRIMARY KEY USING INDEX idx_30397_primary;
+2019-05-09T07:30:01.396000+01:00 NOTICE ALTER TABLE pm922_stag.connecting_road_status ADD PRIMARY KEY USING INDEX idx_30403_primary;
+2019-05-09T07:30:01.397000+01:00 NOTICE ALTER TABLE pm922_stag.contract_account_history ADD PRIMARY KEY USING INDEX idx_30409_primary;
+2019-05-09T07:30:01.397000+01:00 NOTICE ALTER TABLE pm922_stag.country ADD PRIMARY KEY USING INDEX idx_30415_primary;
+2019-05-09T07:30:01.397000+01:00 NOTICE ALTER TABLE pm922_stag.currency ADD PRIMARY KEY USING INDEX idx_30427_primary;
+2019-05-09T07:30:01.398000+01:00 NOTICE ALTER TABLE pm922_stag.country_intl ADD PRIMARY KEY USING INDEX idx_30421_primary;
+2019-05-09T07:30:01.398000+01:00 NOTICE ALTER TABLE pm922_stag.email_change_tokens ADD PRIMARY KEY USING INDEX idx_30436_primary;
+2019-05-09T07:30:01.399000+01:00 NOTICE ALTER TABLE pm922_stag.environment ADD PRIMARY KEY USING INDEX idx_30445_primary;
+2019-05-09T07:30:01.399000+01:00 NOTICE ALTER TABLE pm922_stag.exclusion_info ADD PRIMARY KEY USING INDEX idx_30457_primary;
+2019-05-09T07:30:01.399000+01:00 NOTICE ALTER TABLE pm922_stag.environment_intl ADD PRIMARY KEY USING INDEX idx_30451_primary;
+2019-05-09T07:30:01.400000+01:00 NOTICE ALTER TABLE pm922_stag.extract_transform_load_log ADD PRIMARY KEY USING INDEX idx_30463_primary;
+2019-05-09T07:30:01.400000+01:00 NOTICE ALTER TABLE pm922_stag.facilities ADD PRIMARY KEY USING INDEX idx_30481_primary;
+2019-05-09T07:30:01.400000+01:00 NOTICE ALTER TABLE pm922_stag.failed_logins ADD PRIMARY KEY USING INDEX idx_30493_primary;
+2019-05-09T07:30:01.401000+01:00 NOTICE ALTER TABLE pm922_stag.features_intl ADD PRIMARY KEY USING INDEX idx_30505_primary;
+2019-05-09T07:30:01.401000+01:00 NOTICE ALTER TABLE pm922_stag.feature_information_management_intl ADD PRIMARY KEY USING INDEX idx_30517_primary;
+2019-05-09T07:30:01.401000+01:00 NOTICE ALTER TABLE pm922_stag.fos_user_user_group ADD PRIMARY KEY USING INDEX idx_30530_primary;
+2019-05-09T07:30:01.402000+01:00 NOTICE ALTER TABLE pm922_stag.extract_transform_load_log_history ADD PRIMARY KEY USING INDEX idx_30472_primary;
+2019-05-09T07:30:01.402000+01:00 NOTICE ALTER TABLE pm922_stag.facilities_intl ADD PRIMARY KEY USING INDEX idx_30487_primary;
+2019-05-09T07:30:01.402000+01:00 NOTICE ALTER TABLE pm922_stag.features ADD PRIMARY KEY USING INDEX idx_30499_primary;
+2019-05-09T07:30:01.403000+01:00 NOTICE ALTER TABLE pm922_stag.feature_information_management ADD PRIMARY KEY USING INDEX idx_30511_primary;
+2019-05-09T07:30:01.403000+01:00 NOTICE ALTER TABLE pm922_stag.fos_group ADD PRIMARY KEY USING INDEX idx_30523_primary;
+2019-05-09T07:30:01.403000+01:00 NOTICE ALTER TABLE pm922_stag.generated_statements ADD PRIMARY KEY USING INDEX idx_30535_primary;
+2019-05-09T07:30:01.404000+01:00 NOTICE ALTER TABLE pm922_stag.gl_column_settings ADD PRIMARY KEY USING INDEX idx_30553_primary;
+2019-05-09T07:30:01.404000+01:00 NOTICE ALTER TABLE pm922_stag.gl ADD PRIMARY KEY USING INDEX idx_30547_primary;
+2019-05-09T07:30:01.405000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info_tag ADD PRIMARY KEY USING INDEX idx_30571_primary;
+2019-05-09T07:30:01.405000+01:00 NOTICE ALTER TABLE pm922_stag.gl_media ADD PRIMARY KEY USING INDEX idx_30591_primary;
+2019-05-09T07:30:01.405000+01:00 NOTICE ALTER TABLE pm922_stag.guarantor_info_intl ADD PRIMARY KEY USING INDEX idx_30609_primary;
+2019-05-09T07:30:01.406000+01:00 NOTICE ALTER TABLE pm922_stag.industry_type_intl ADD PRIMARY KEY USING INDEX idx_30624_primary;
+2019-05-09T07:30:01.406000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item ADD PRIMARY KEY USING INDEX idx_30641_primary;
+2019-05-09T07:30:01.406000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item_group_intl ADD PRIMARY KEY USING INDEX idx_30654_primary;
+2019-05-09T07:30:01.407000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_name ADD PRIMARY KEY USING INDEX idx_30666_primary;
+2019-05-09T07:30:01.407000+01:00 NOTICE ALTER TABLE pm922_stag.language ADD PRIMARY KEY USING INDEX idx_30681_primary;
+2019-05-09T07:30:01.407000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info ADD PRIMARY KEY USING INDEX idx_30690_primary;
+2019-05-09T07:30:01.408000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_tmp ADD PRIMARY KEY USING INDEX idx_30708_primary;
+2019-05-09T07:30:01.408000+01:00 NOTICE ALTER TABLE pm922_stag.nearest_station ADD PRIMARY KEY USING INDEX idx_30726_primary;
+2019-05-09T07:30:01.408000+01:00 NOTICE ALTER TABLE pm922_stag.onetime_account ADD PRIMARY KEY USING INDEX idx_30741_primary;
+2019-05-09T07:30:01.409000+01:00 NOTICE ALTER TABLE pm922_stag.owner_admin ADD PRIMARY KEY USING INDEX idx_30776_primary;
+2019-05-09T07:30:01.409000+01:00 NOTICE ALTER TABLE pm922_stag.owner_bank_info_intl ADD PRIMARY KEY USING INDEX idx_30791_primary;
+2019-05-09T07:30:01.409000+01:00 NOTICE ALTER TABLE pm922_stag.owner_broker_info_intl ADD PRIMARY KEY USING INDEX idx_30806_primary;
+2019-05-09T07:30:01.410000+01:00 NOTICE ALTER TABLE pm922_stag.owner_income_info_intl ADD PRIMARY KEY USING INDEX idx_30818_primary;
+2019-05-09T07:30:01.410000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice ADD PRIMARY KEY USING INDEX idx_30833_primary;
+2019-05-09T07:30:01.410000+01:00 NOTICE ALTER TABLE pm922_stag.owner_loan_info ADD PRIMARY KEY USING INDEX idx_30853_primary;
+2019-05-09T07:30:01.410000+01:00 NOTICE ALTER TABLE pm922_stag.owner_property ADD PRIMARY KEY USING INDEX idx_30868_primary;
+2019-05-09T07:30:01.411000+01:00 NOTICE ALTER TABLE pm922_stag.owner_work_info ADD PRIMARY KEY USING INDEX idx_30882_primary;
+2019-05-09T07:30:01.411000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info ADD PRIMARY KEY USING INDEX idx_30561_primary;
+2019-05-09T07:30:01.411000+01:00 NOTICE ALTER TABLE pm922_stag.parking_facilities ADD PRIMARY KEY USING INDEX idx_30897_primary;
+2019-05-09T07:30:01.412000+01:00 NOTICE ALTER TABLE pm922_stag.payee_vendor ADD PRIMARY KEY USING INDEX idx_30909_primary;
+2019-05-09T07:30:01.412000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info_tmp ADD PRIMARY KEY USING INDEX idx_30580_primary;
+2019-05-09T07:30:01.413000+01:00 NOTICE ALTER TABLE pm922_stag.guarantor_info ADD PRIMARY KEY USING INDEX idx_30600_primary;
+2019-05-09T07:30:01.413000+01:00 NOTICE ALTER TABLE pm922_stag.industry_type ADD PRIMARY KEY USING INDEX idx_30618_primary;
+2019-05-09T07:30:01.413000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match ADD PRIMARY KEY USING INDEX idx_30928_primary;
+2019-05-09T07:30:01.414000+01:00 NOTICE ALTER TABLE pm922_stag.payment_type ADD PRIMARY KEY USING INDEX idx_30948_primary;
+2019-05-09T07:30:01.414000+01:00 NOTICE ALTER TABLE pm922_stag.pdf_token ADD PRIMARY KEY USING INDEX idx_30968_primary;
+2019-05-09T07:30:01.414000+01:00 NOTICE ALTER TABLE pm922_stag.pl_memo ADD PRIMARY KEY USING INDEX idx_30984_primary;
+2019-05-09T07:30:01.415000+01:00 NOTICE ALTER TABLE pm922_stag.prefecture ADD PRIMARY KEY USING INDEX idx_30996_primary;
+2019-05-09T07:30:01.415000+01:00 NOTICE ALTER TABLE pm922_stag.prime_broker ADD PRIMARY KEY USING INDEX idx_31005_primary;
+2019-05-09T07:30:01.415000+01:00 NOTICE ALTER TABLE pm922_stag.property ADD PRIMARY KEY USING INDEX idx_31023_primary;
+2019-05-09T07:30:01.416000+01:00 NOTICE ALTER TABLE pm922_stag.property_acquisition_info_intl ADD PRIMARY KEY USING INDEX idx_31075_primary;
+2019-05-09T07:30:01.416000+01:00 NOTICE ALTER TABLE pm922_stag.property_addresses_intl ADD PRIMARY KEY USING INDEX idx_31090_primary;
+2019-05-09T07:30:01.416000+01:00 NOTICE ALTER TABLE pm922_stag.property_address_status_intl ADD PRIMARY KEY USING INDEX idx_31102_primary;
+2019-05-09T07:30:01.417000+01:00 NOTICE ALTER TABLE pm922_stag.property_facilities_intl ADD PRIMARY KEY USING INDEX idx_31114_primary;
+2019-05-09T07:30:01.417000+01:00 NOTICE ALTER TABLE pm922_stag.property_features_intl ADD PRIMARY KEY USING INDEX idx_31126_primary;
+2019-05-09T07:30:01.417000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_intl ADD PRIMARY KEY USING INDEX idx_31140_primary;
+2019-05-09T07:30:01.417000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_tmp_intl ADD PRIMARY KEY USING INDEX idx_31156_primary;
+2019-05-09T07:30:01.418000+01:00 NOTICE ALTER TABLE pm922_stag.property_media ADD PRIMARY KEY USING INDEX idx_31171_primary;
+2019-05-09T07:30:01.418000+01:00 NOTICE ALTER TABLE pm922_stag.invoice ADD PRIMARY KEY USING INDEX idx_30630_primary;
+2019-05-09T07:30:01.418000+01:00 NOTICE ALTER TABLE pm922_stag.property_repair_info_intl ADD PRIMARY KEY USING INDEX idx_31186_primary;
+2019-05-09T07:30:01.419000+01:00 NOTICE ALTER TABLE pm922_stag.railway_line ADD PRIMARY KEY USING INDEX idx_31196_primary;
+2019-05-09T07:30:01.419000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item_group ADD PRIMARY KEY USING INDEX idx_30648_primary;
+2019-05-09T07:30:01.420000+01:00 NOTICE ALTER TABLE pm922_stag.register_address ADD PRIMARY KEY USING INDEX idx_31210_primary;
+2019-05-09T07:30:01.420000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item_intl ADD PRIMARY KEY USING INDEX idx_30660_primary;
+2019-05-09T07:30:01.421000+01:00 NOTICE ALTER TABLE pm922_stag.remittance_type ADD PRIMARY KEY USING INDEX idx_31225_primary;
+2019-05-09T07:30:01.421000+01:00 NOTICE ALTER TABLE pm922_stag.isp_header_match ADD PRIMARY KEY USING INDEX idx_30672_primary;
+2019-05-09T07:30:01.421000+01:00 NOTICE ALTER TABLE pm922_stag.migration_versions ADD PRIMARY KEY USING INDEX idx_30685_primary;
+2019-05-09T07:30:01.422000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract ADD PRIMARY KEY USING INDEX idx_31244_primary;
+2019-05-09T07:30:01.422000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_intl ADD PRIMARY KEY USING INDEX idx_30702_primary;
+2019-05-09T07:30:01.422000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_cancellation_intl ADD PRIMARY KEY USING INDEX idx_31257_primary;
+2019-05-09T07:30:01.423000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_tmp_intl ADD PRIMARY KEY USING INDEX idx_30720_primary;
+2019-05-09T07:30:01.423000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_info_intl ADD PRIMARY KEY USING INDEX idx_31276_primary;
+2019-05-09T07:30:01.423000+01:00 NOTICE ALTER TABLE pm922_stag.nearest_station_intl ADD PRIMARY KEY USING INDEX idx_30735_primary;
+2019-05-09T07:30:01.424000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_renew_info_intl ADD PRIMARY KEY USING INDEX idx_31292_primary;
+2019-05-09T07:30:01.424000+01:00 NOTICE ALTER TABLE pm922_stag.owner ADD PRIMARY KEY USING INDEX idx_30747_primary;
+2019-05-09T07:30:01.424000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_owner ADD PRIMARY KEY USING INDEX idx_31310_primary;
+2019-05-09T07:30:01.425000+01:00 NOTICE ALTER TABLE pm922_stag.owner_bank_info ADD PRIMARY KEY USING INDEX idx_30782_primary;
+2019-05-09T07:30:01.425000+01:00 NOTICE ALTER TABLE pm922_stag.repair_reserve_fund_info ADD PRIMARY KEY USING INDEX idx_31322_primary;
+2019-05-09T07:30:01.425000+01:00 NOTICE ALTER TABLE pm922_stag.owner_broker_info ADD PRIMARY KEY USING INDEX idx_30800_primary;
+2019-05-09T07:30:01.426000+01:00 NOTICE ALTER TABLE pm922_stag.owner_income_info ADD PRIMARY KEY USING INDEX idx_30812_primary;
+2019-05-09T07:30:01.426000+01:00 NOTICE ALTER TABLE pm922_stag.owner_intl ADD PRIMARY KEY USING INDEX idx_30824_primary;
+2019-05-09T07:30:01.427000+01:00 NOTICE ALTER TABLE pm922_stag.room ADD PRIMARY KEY USING INDEX idx_31334_primary;
+2019-05-09T07:30:01.427000+01:00 NOTICE ALTER TABLE pm922_stag.room_acquisition_info_intl ADD PRIMARY KEY USING INDEX idx_31390_primary;
+2019-05-09T07:30:01.428000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_intl ADD PRIMARY KEY USING INDEX idx_31410_primary;
+2019-05-09T07:30:01.428000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_tmp_intl ADD PRIMARY KEY USING INDEX idx_31429_primary;
+2019-05-09T07:30:01.428000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info ADD PRIMARY KEY USING INDEX idx_31441_primary;
+2019-05-09T07:30:01.429000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_tmp ADD PRIMARY KEY USING INDEX idx_31459_primary;
+2019-05-09T07:30:01.429000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice_publish ADD PRIMARY KEY USING INDEX idx_30843_primary;
+2019-05-09T07:30:01.430000+01:00 NOTICE ALTER TABLE pm922_stag.owner_loan_info_intl ADD PRIMARY KEY USING INDEX idx_30859_primary;
+2019-05-09T07:30:01.430000+01:00 NOTICE ALTER TABLE pm922_stag.owner_room ADD PRIMARY KEY USING INDEX idx_30875_primary;
+2019-05-09T07:30:01.430000+01:00 NOTICE ALTER TABLE pm922_stag.owner_work_info_intl ADD PRIMARY KEY USING INDEX idx_30888_primary;
+2019-05-09T07:30:01.431000+01:00 NOTICE ALTER TABLE pm922_stag.parking_facilities_intl ADD PRIMARY KEY USING INDEX idx_30903_primary;
+2019-05-09T07:30:01.431000+01:00 NOTICE ALTER TABLE pm922_stag.room_pl_info ADD PRIMARY KEY USING INDEX idx_31477_primary;
+2019-05-09T07:30:01.432000+01:00 NOTICE ALTER TABLE pm922_stag.payee_vendor_intl ADD PRIMARY KEY USING INDEX idx_30919_primary;
+2019-05-09T07:30:01.432000+01:00 NOTICE ALTER TABLE pm922_stag.setting_history ADD PRIMARY KEY USING INDEX idx_31493_primary;
+2019-05-09T07:30:01.432000+01:00 NOTICE ALTER TABLE pm922_stag.station_log ADD PRIMARY KEY USING INDEX idx_31511_primary;
+2019-05-09T07:30:01.433000+01:00 NOTICE ALTER TABLE pm922_stag.tax_agent_contract ADD PRIMARY KEY USING INDEX idx_31523_primary;
+2019-05-09T07:30:01.433000+01:00 NOTICE ALTER TABLE pm922_stag.tax_classification_info ADD PRIMARY KEY USING INDEX idx_31539_primary;
+2019-05-09T07:30:01.434000+01:00 NOTICE ALTER TABLE pm922_stag.tenant ADD PRIMARY KEY USING INDEX idx_31551_primary;
+2019-05-09T07:30:01.434000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_info_intl ADD PRIMARY KEY USING INDEX idx_31586_primary;
+2019-05-09T07:30:01.435000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_work_info ADD PRIMARY KEY USING INDEX idx_31604_primary;
+2019-05-09T07:30:01.435000+01:00 NOTICE ALTER TABLE pm922_stag."user" ADD PRIMARY KEY USING INDEX idx_31619_primary;
+2019-05-09T07:30:01.435000+01:00 NOTICE ALTER TABLE pm922_stag.user_type ADD PRIMARY KEY USING INDEX idx_31637_primary;
+2019-05-09T07:30:01.436000+01:00 NOTICE ALTER TABLE pm922_stag.vendor_invoice_item_info ADD PRIMARY KEY USING INDEX idx_31649_primary;
+2019-05-09T07:30:01.436000+01:00 NOTICE ALTER TABLE pm922_stag.zip_log ADD PRIMARY KEY USING INDEX idx_31661_primary;
+2019-05-09T07:30:01.437000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match_publish ADD PRIMARY KEY USING INDEX idx_30938_primary;
+2019-05-09T07:30:01.437000+01:00 NOTICE ALTER TABLE pm922_stag.payment_type_intl ADD PRIMARY KEY USING INDEX idx_30959_primary;
+2019-05-09T07:30:01.437000+01:00 NOTICE ALTER TABLE pm922_stag.photo ADD PRIMARY KEY USING INDEX idx_30975_primary;
+2019-05-09T07:30:01.438000+01:00 NOTICE ALTER TABLE pm922_stag.postal_code ADD PRIMARY KEY USING INDEX idx_30991_primary;
+2019-05-09T07:30:01.438000+01:00 NOTICE ALTER TABLE pm922_stag.prefecture_line_info ADD PRIMARY KEY USING INDEX idx_31000_primary;
+2019-05-09T07:30:01.439000+01:00 NOTICE ALTER TABLE pm922_stag.prime_broker_intl ADD PRIMARY KEY USING INDEX idx_31014_primary;
+2019-05-09T07:30:01.439000+01:00 NOTICE ALTER TABLE pm922_stag.property_acquisition_info ADD PRIMARY KEY USING INDEX idx_31031_primary;
+2019-05-09T07:30:01.440000+01:00 NOTICE ALTER TABLE pm922_stag.property_addresses ADD PRIMARY KEY USING INDEX idx_31084_primary;
+2019-05-09T07:30:01.440000+01:00 NOTICE ALTER TABLE pm922_stag.property_address_status ADD PRIMARY KEY USING INDEX idx_31096_primary;
+2019-05-09T07:30:01.440000+01:00 NOTICE ALTER TABLE pm922_stag.property_facilities ADD PRIMARY KEY USING INDEX idx_31108_primary;
+2019-05-09T07:30:01.441000+01:00 NOTICE ALTER TABLE pm922_stag.property_features ADD PRIMARY KEY USING INDEX idx_31120_primary;
+2019-05-09T07:30:01.441000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info ADD PRIMARY KEY USING INDEX idx_31132_primary;
+2019-05-09T07:30:01.442000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_tmp ADD PRIMARY KEY USING INDEX idx_31149_primary;
+2019-05-09T07:30:01.442000+01:00 NOTICE ALTER TABLE pm922_stag.property_intl ADD PRIMARY KEY USING INDEX idx_31162_primary;
+2019-05-09T07:30:01.442000+01:00 NOTICE ALTER TABLE pm922_stag.property_repair_info ADD PRIMARY KEY USING INDEX idx_31180_primary;
+2019-05-09T07:30:01.443000+01:00 NOTICE ALTER TABLE pm922_stag.property_tag ADD PRIMARY KEY USING INDEX idx_31192_primary;
+2019-05-09T07:30:01.443000+01:00 NOTICE ALTER TABLE pm922_stag.railway_line_log ADD PRIMARY KEY USING INDEX idx_31204_primary;
+2019-05-09T07:30:01.444000+01:00 NOTICE ALTER TABLE pm922_stag.registration_of_address_info ADD PRIMARY KEY USING INDEX idx_31219_primary;
+2019-05-09T07:30:01.444000+01:00 NOTICE ALTER TABLE pm922_stag.remittance_type_intl ADD PRIMARY KEY USING INDEX idx_31235_primary;
+2019-05-09T07:30:01.444000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_cancellation ADD PRIMARY KEY USING INDEX idx_31250_primary;
+2019-05-09T07:30:01.445000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_info ADD PRIMARY KEY USING INDEX idx_31266_primary;
+2019-05-09T07:30:01.445000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_renew_info ADD PRIMARY KEY USING INDEX idx_31285_primary;
+2019-05-09T07:30:01.446000+01:00 NOTICE ALTER TABLE pm922_stag.rental_payment ADD PRIMARY KEY USING INDEX idx_31301_primary;
+2019-05-09T07:30:01.446000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_tenant ADD PRIMARY KEY USING INDEX idx_31316_primary;
+2019-05-09T07:30:01.446000+01:00 NOTICE ALTER TABLE pm922_stag.repair_reserve_fund_info_intl ADD PRIMARY KEY USING INDEX idx_31328_primary;
+2019-05-09T07:30:01.447000+01:00 NOTICE ALTER TABLE pm922_stag.room_acquisition_info ADD PRIMARY KEY USING INDEX idx_31346_primary;
+2019-05-09T07:30:01.447000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info ADD PRIMARY KEY USING INDEX idx_31399_primary;
+2019-05-09T07:30:01.448000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_tmp ADD PRIMARY KEY USING INDEX idx_31419_primary;
+2019-05-09T07:30:01.448000+01:00 NOTICE ALTER TABLE pm922_stag.room_intl ADD PRIMARY KEY USING INDEX idx_31435_primary;
+2019-05-09T07:30:01.449000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_intl ADD PRIMARY KEY USING INDEX idx_31450_primary;
+2019-05-09T07:30:01.449000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_tmp_intl ADD PRIMARY KEY USING INDEX idx_31468_primary;
+2019-05-09T07:30:01.449000+01:00 NOTICE ALTER TABLE pm922_stag.setting ADD PRIMARY KEY USING INDEX idx_31484_primary;
+2019-05-09T07:30:01.450000+01:00 NOTICE ALTER TABLE pm922_stag.station ADD PRIMARY KEY USING INDEX idx_31502_primary;
+2019-05-09T07:30:01.450000+01:00 NOTICE ALTER TABLE pm922_stag.tags ADD PRIMARY KEY USING INDEX idx_31517_primary;
+2019-05-09T07:30:01.450000+01:00 NOTICE ALTER TABLE pm922_stag.tax_agent_contract_intl ADD PRIMARY KEY USING INDEX idx_31530_primary;
+2019-05-09T07:30:01.451000+01:00 NOTICE ALTER TABLE pm922_stag.tax_classification_info_intl ADD PRIMARY KEY USING INDEX idx_31545_primary;
+2019-05-09T07:30:01.451000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_info ADD PRIMARY KEY USING INDEX idx_31580_primary;
+2019-05-09T07:30:01.452000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_intl ADD PRIMARY KEY USING INDEX idx_31595_primary;
+2019-05-09T07:30:01.452000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_work_info_intl ADD PRIMARY KEY USING INDEX idx_31610_primary;
+2019-05-09T07:30:01.452000+01:00 NOTICE ALTER TABLE pm922_stag.user_login_log ADD PRIMARY KEY USING INDEX idx_31628_primary;
+2019-05-09T07:30:01.453000+01:00 NOTICE ALTER TABLE pm922_stag.vendor_industry_type_info ADD PRIMARY KEY USING INDEX idx_31643_primary;
+2019-05-09T07:30:01.453000+01:00 NOTICE ALTER TABLE pm922_stag.zip_code ADD PRIMARY KEY USING INDEX idx_31655_primary;
+2019-05-09T07:30:01.455000+01:00 NOTICE ALTER TABLE pm922_stag.access_tokens ADD CONSTRAINT fk_58d184bca76ed395 FOREIGN KEY(user_id) REFERENCES pm922_stag."user"(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.457000+01:00 NOTICE ALTER TABLE pm922_stag.assets_management_contract ADD CONSTRAINT fk_4e72c09954177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.458000+01:00 NOTICE ALTER TABLE pm922_stag.assets_management_contract ADD CONSTRAINT fk_4e72c09954177153 FOREIGN KEY(owner_bank_info_id) REFERENCES pm922_stag.owner_bank_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.459000+01:00 NOTICE ALTER TABLE pm922_stag.assets_management_contract_intl ADD CONSTRAINT fk_e48515f7e172815f FOREIGN KEY(assets_management_contract_id) REFERENCES pm922_stag.assets_management_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.460000+01:00 NOTICE ALTER TABLE pm922_stag.bathroom_info ADD CONSTRAINT fk_1063a398f4770a29 FOREIGN KEY(feature_information_management_id) REFERENCES pm922_stag.feature_information_management(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.461000+01:00 NOTICE ALTER TABLE pm922_stag.bedroom_info ADD CONSTRAINT fk_8b76515f4770a29 FOREIGN KEY(feature_information_management_id) REFERENCES pm922_stag.feature_information_management(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.461000+01:00 NOTICE ALTER TABLE pm922_stag.category_intl ADD CONSTRAINT fk_a1ef6a7912469de2 FOREIGN KEY(category_id) REFERENCES pm922_stag.category(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.462000+01:00 NOTICE ALTER TABLE pm922_stag.company_info ADD CONSTRAINT fk_cf60e67c4a08b9999 FOREIGN KEY(country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.463000+01:00 NOTICE ALTER TABLE pm922_stag.company_info_intl ADD CONSTRAINT fk_400448407dd9db2f FOREIGN KEY(company_info_id) REFERENCES pm922_stag.company_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.464000+01:00 NOTICE ALTER TABLE pm922_stag.connecting_road ADD CONSTRAINT fk_d2a899f7f7392c70 FOREIGN KEY(connecting_road_status_id) REFERENCES pm922_stag.connecting_road_status(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.465000+01:00 NOTICE ALTER TABLE pm922_stag.connecting_road_intl ADD CONSTRAINT fk_2968e903ae44ba3e FOREIGN KEY(connecting_road_id) REFERENCES pm922_stag.connecting_road(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.466000+01:00 NOTICE ALTER TABLE pm922_stag.connecting_road_status ADD CONSTRAINT fk_d5896406549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.466000+01:00 NOTICE ALTER TABLE pm922_stag.contract_account_history ADD CONSTRAINT fk_3dcf19f92576e0fd FOREIGN KEY(contract_id) REFERENCES pm922_stag.rental_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.467000+01:00 NOTICE ALTER TABLE pm922_stag.contract_account_history ADD CONSTRAINT fk_3dcf19f99b6b5fba FOREIGN KEY(account_id) REFERENCES pm922_stag.onetime_account(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.468000+01:00 NOTICE ALTER TABLE pm922_stag.environment ADD CONSTRAINT fk_4626de22549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.469000+01:00 NOTICE ALTER TABLE pm922_stag.environment_intl ADD CONSTRAINT fk_9038003a903e3a94 FOREIGN KEY(environment_id) REFERENCES pm922_stag.environment(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.470000+01:00 NOTICE ALTER TABLE pm922_stag.facilities_intl ADD CONSTRAINT fk_509b95b95263402 FOREIGN KEY(facilities_id) REFERENCES pm922_stag.facilities(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.471000+01:00 NOTICE ALTER TABLE pm922_stag.failed_logins ADD CONSTRAINT fk_d2ceaad6f132696e FOREIGN KEY(userid) REFERENCES pm922_stag."user"(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.471000+01:00 NOTICE ALTER TABLE pm922_stag.features_intl ADD CONSTRAINT fk_ce61af61cec89005 FOREIGN KEY(features_id) REFERENCES pm922_stag.features(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.472000+01:00 NOTICE ALTER TABLE pm922_stag.feature_information_management ADD CONSTRAINT fk_9235dea3549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.473000+01:00 NOTICE ALTER TABLE pm922_stag.feature_information_management_intl ADD CONSTRAINT fk_e78a842af4770a29 FOREIGN KEY(feature_information_management_id) REFERENCES pm922_stag.feature_information_management(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.474000+01:00 NOTICE ALTER TABLE pm922_stag.fos_user_user_group ADD CONSTRAINT fk_3d7b6a06a76ed395 FOREIGN KEY(user_id) REFERENCES pm922_stag."user"(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.475000+01:00 NOTICE ALTER TABLE pm922_stag.fos_user_user_group ADD CONSTRAINT fk_3d7b6a06d4873f76 FOREIGN KEY(group_id) REFERENCES pm922_stag.fos_group(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.475000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info ADD CONSTRAINT fk_01234567907 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.476000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567907" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.gl_info ADD CONSTRAINT fk_01234567907 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.476000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info_tag ADD CONSTRAINT gl_info_tag_id_fk_1 FOREIGN KEY(tag_id) REFERENCES pm922_stag.tags(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.477000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info_tag ADD CONSTRAINT gl_info_tag_id_fk_2 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.477000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "gl_info_tag_id_fk_2" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.gl_info_tag ADD CONSTRAINT gl_info_tag_id_fk_2 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.477000+01:00 NOTICE ALTER TABLE pm922_stag.gl_info_tmp ADD CONSTRAINT fk_01234567906 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.477000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567906" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.gl_info_tmp ADD CONSTRAINT fk_01234567906 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.477000+01:00 NOTICE ALTER TABLE pm922_stag.gl_media ADD CONSTRAINT fk_01234567905 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.478000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567905" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.gl_media ADD CONSTRAINT fk_01234567905 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.478000+01:00 NOTICE ALTER TABLE pm922_stag.guarantor_info ADD CONSTRAINT fk_63cdd4699033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.479000+01:00 NOTICE ALTER TABLE pm922_stag.guarantor_info_intl ADD CONSTRAINT fk_9de266a021c68bea FOREIGN KEY(guarantor_info_id) REFERENCES pm922_stag.guarantor_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.480000+01:00 NOTICE ALTER TABLE pm922_stag.industry_type_intl ADD CONSTRAINT fk_6089fa83f2d3bae6 FOREIGN KEY(industry_type_id) REFERENCES pm922_stag.industry_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.481000+01:00 NOTICE ALTER TABLE pm922_stag.invoice ADD CONSTRAINT fk_0323456790 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.481000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_0323456790" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.invoice ADD CONSTRAINT fk_0323456790 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.481000+01:00 NOTICE ALTER TABLE pm922_stag.invoice ADD CONSTRAINT fk_9065174454177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.510000+01:00 NOTICE ALTER TABLE pm922_stag.invoice ADD CONSTRAINT fk_906517449033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.526000+01:00 NOTICE ALTER TABLE pm922_stag.invoice ADD CONSTRAINT fk_90651744e0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.550000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item ADD CONSTRAINT fk_1dde477bc58e6386 FOREIGN KEY(invoice_item_group_id) REFERENCES pm922_stag.invoice_item_group(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.551000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item_group_intl ADD CONSTRAINT fk_fa7bcc09c58e6386 FOREIGN KEY(invoice_item_group_id) REFERENCES pm922_stag.invoice_item_group(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.552000+01:00 NOTICE ALTER TABLE pm922_stag.invoice_item_intl ADD CONSTRAINT fk_87eba559e0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.553000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info ADD CONSTRAINT fk_1b7bb9427e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.554000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info ADD CONSTRAINT fk_1b7bb942e872685c FOREIGN KEY(remittance_type_id) REFERENCES pm922_stag.remittance_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.555000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_intl ADD CONSTRAINT fk_c48a2637e78f21c0 FOREIGN KEY(money_transfer_info_id) REFERENCES pm922_stag.money_transfer_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.556000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_tmp ADD CONSTRAINT fk_01234567901 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.556000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567901" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.money_transfer_info_tmp ADD CONSTRAINT fk_01234567901 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.556000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_tmp ADD CONSTRAINT fk_dcb8584a7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.557000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_tmp ADD CONSTRAINT fk_dcb8584ae872685c FOREIGN KEY(remittance_type_id) REFERENCES pm922_stag.remittance_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.558000+01:00 NOTICE ALTER TABLE pm922_stag.money_transfer_info_tmp_intl ADD CONSTRAINT fk_8d6b223bac942118 FOREIGN KEY(money_transfer_info_tmp_id) REFERENCES pm922_stag.money_transfer_info_tmp(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.559000+01:00 NOTICE ALTER TABLE pm922_stag.nearest_station ADD CONSTRAINT fk_7415f318549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.560000+01:00 NOTICE ALTER TABLE pm922_stag.nearest_station_intl ADD CONSTRAINT fk_e2acd84626386119 FOREIGN KEY(nearest_station_id) REFERENCES pm922_stag.nearest_station(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.561000+01:00 NOTICE ALTER TABLE pm922_stag.onetime_account ADD CONSTRAINT fk_c79b07d02576e0fd FOREIGN KEY(contract_id) REFERENCES pm922_stag.rental_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.561000+01:00 NOTICE ALTER TABLE pm922_stag.owner ADD CONSTRAINT fk_cf60e67c42a32c09 FOREIGN KEY(mailing_country) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.562000+01:00 NOTICE ALTER TABLE pm922_stag.owner ADD CONSTRAINT fk_cf60e67c47c609eb FOREIGN KEY(residence_country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.563000+01:00 NOTICE ALTER TABLE pm922_stag.owner ADD CONSTRAINT fk_cf60e67c4a08b118 FOREIGN KEY(nationality_country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.564000+01:00 NOTICE ALTER TABLE pm922_stag.owner ADD CONSTRAINT fk_cf60e67c708ff8c6 FOREIGN KEY(bank_country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.565000+01:00 NOTICE ALTER TABLE pm922_stag.owner_admin ADD CONSTRAINT fk_7897385154eb9201 FOREIGN KEY(prime_admin_id) REFERENCES pm922_stag."user"(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.566000+01:00 NOTICE ALTER TABLE pm922_stag.owner_admin ADD CONSTRAINT fk_789738517e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.567000+01:00 NOTICE ALTER TABLE pm922_stag.owner_bank_info ADD CONSTRAINT fk_6392106a708ff8c6 FOREIGN KEY(bank_country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.567000+01:00 NOTICE ALTER TABLE pm922_stag.owner_bank_info ADD CONSTRAINT fk_6392106a7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.568000+01:00 NOTICE ALTER TABLE pm922_stag.owner_bank_info_intl ADD CONSTRAINT fk_448d0cac77c26b9c FOREIGN KEY(owner_bank_info_id) REFERENCES pm922_stag.owner_bank_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.569000+01:00 NOTICE ALTER TABLE pm922_stag.owner_broker_info ADD CONSTRAINT fk_56d69f776cc064fc FOREIGN KEY(broker_id) REFERENCES pm922_stag.prime_broker(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.570000+01:00 NOTICE ALTER TABLE pm922_stag.owner_broker_info ADD CONSTRAINT fk_56d69f777e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.571000+01:00 NOTICE ALTER TABLE pm922_stag.owner_broker_info_intl ADD CONSTRAINT fk_bc651e58ae965a87 FOREIGN KEY(owner_broker_info_id) REFERENCES pm922_stag.owner_broker_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.572000+01:00 NOTICE ALTER TABLE pm922_stag.owner_income_info ADD CONSTRAINT fk_727f8ff7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.573000+01:00 NOTICE ALTER TABLE pm922_stag.owner_income_info_intl ADD CONSTRAINT fk_8ca45f43a1b62f04 FOREIGN KEY(owner_income_info_id) REFERENCES pm922_stag.owner_income_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.573000+01:00 NOTICE ALTER TABLE pm922_stag.owner_intl ADD CONSTRAINT fk_bcd273ae7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.574000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice ADD CONSTRAINT fk_0523456790 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.574000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_0523456790" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.owner_invoice ADD CONSTRAINT fk_0523456790 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.575000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice ADD CONSTRAINT fk_1c13919b345bc702 FOREIGN KEY(payee_vendor_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.576000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice ADD CONSTRAINT fk_1c13919b54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.582000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice ADD CONSTRAINT fk_1c13919be0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:01.588000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice_publish ADD CONSTRAINT fk_oip_0523456791 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.588000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_oip_0523456791" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.owner_invoice_publish ADD CONSTRAINT fk_oip_0523456791 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.588000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice_publish ADD CONSTRAINT fk_oip_1c13919b345bc703 FOREIGN KEY(payee_vendor_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.589000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice_publish ADD CONSTRAINT fk_oip_1c13919b54177094 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.594000+01:00 NOTICE ALTER TABLE pm922_stag.owner_invoice_publish ADD CONSTRAINT fk_oip_1c13919be0b6648e FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:01.598000+01:00 NOTICE ALTER TABLE pm922_stag.owner_loan_info ADD CONSTRAINT fk_185f3890549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.599000+01:00 NOTICE ALTER TABLE pm922_stag.owner_loan_info ADD CONSTRAINT fk_185f38907e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.600000+01:00 NOTICE ALTER TABLE pm922_stag.owner_loan_info_intl ADD CONSTRAINT fk_763366af77198d46 FOREIGN KEY(owner_loan_info_id) REFERENCES pm922_stag.owner_loan_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.601000+01:00 NOTICE ALTER TABLE pm922_stag.owner_property ADD CONSTRAINT fk_9d12a51d549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.602000+01:00 NOTICE ALTER TABLE pm922_stag.owner_property ADD CONSTRAINT fk_9d12a51d7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.603000+01:00 NOTICE ALTER TABLE pm922_stag.owner_room ADD CONSTRAINT fk_e439320b54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.605000+01:00 NOTICE ALTER TABLE pm922_stag.owner_room ADD CONSTRAINT fk_e439320b7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.606000+01:00 NOTICE ALTER TABLE pm922_stag.owner_work_info ADD CONSTRAINT fk_3031f3dc7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.607000+01:00 NOTICE ALTER TABLE pm922_stag.owner_work_info_intl ADD CONSTRAINT fk_5568f2608c9dbb10 FOREIGN KEY(owner_work_info_id) REFERENCES pm922_stag.owner_work_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.608000+01:00 NOTICE ALTER TABLE pm922_stag.parking_facilities ADD CONSTRAINT fk_b14c556ef4770a29 FOREIGN KEY(feature_information_management_id) REFERENCES pm922_stag.feature_information_management(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.608000+01:00 NOTICE ALTER TABLE pm922_stag.parking_facilities_intl ADD CONSTRAINT fk_29debdc4fbae87c4 FOREIGN KEY(parking_facility_id) REFERENCES pm922_stag.parking_facilities(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.609000+01:00 NOTICE ALTER TABLE pm922_stag.payee_vendor_intl ADD CONSTRAINT fk_742f0762345bc702 FOREIGN KEY(payee_vendor_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.610000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match ADD CONSTRAINT fk_01234567898 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.610000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567898" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.payment_match ADD CONSTRAINT fk_01234567898 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.610000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match ADD CONSTRAINT fk_2d12f3b72989f1fd FOREIGN KEY(invoice_id) REFERENCES pm922_stag.invoice(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.686000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match ADD CONSTRAINT fk_2d12f3b794c35e2d FOREIGN KEY(rental_payment_id) REFERENCES pm922_stag.rental_payment(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.759000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match_publish ADD CONSTRAINT fk_01234567900 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.759000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567900" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.payment_match_publish ADD CONSTRAINT fk_01234567900 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.759000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match_publish ADD CONSTRAINT fk_2d12f3b72989faaa FOREIGN KEY(invoice_id) REFERENCES pm922_stag.invoice(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.822000+01:00 NOTICE ALTER TABLE pm922_stag.payment_match_publish ADD CONSTRAINT fk_2d12f3b794c35aaa FOREIGN KEY(rental_payment_id) REFERENCES pm922_stag.rental_payment(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.880000+01:00 NOTICE ALTER TABLE pm922_stag.payment_type_intl ADD CONSTRAINT fk_be52fa1edc058279 FOREIGN KEY(payment_type_id) REFERENCES pm922_stag.payment_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.881000+01:00 NOTICE ALTER TABLE pm922_stag.pdf_token ADD CONSTRAINT fk_cea0ece1a76ed395 FOREIGN KEY(user_id) REFERENCES pm922_stag."user"(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.882000+01:00 NOTICE ALTER TABLE pm922_stag.postal_code ADD CONSTRAINT fk_ea98e3769d39c865 FOREIGN KEY(prefecture_id) REFERENCES pm922_stag.prefecture(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.884000+01:00 NOTICE ALTER TABLE pm922_stag.postal_code ADD CONSTRAINT fk_ea98e376f92f3e70 FOREIGN KEY(country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.884000+01:00 NOTICE ALTER TABLE pm922_stag.prefecture ADD CONSTRAINT fk_abe6511af92f3e70 FOREIGN KEY(country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.885000+01:00 NOTICE ALTER TABLE pm922_stag.prefecture_line_info ADD CONSTRAINT fk_58ee8cf59d39c865 FOREIGN KEY(prefecture_id) REFERENCES pm922_stag.prefecture(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.886000+01:00 NOTICE ALTER TABLE pm922_stag.prefecture_line_info ADD CONSTRAINT fk_58ee8cf5b7949dc8 FOREIGN KEY(line_cd) REFERENCES pm922_stag.railway_line(line_cd) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.887000+01:00 NOTICE ALTER TABLE pm922_stag.prime_broker_intl ADD CONSTRAINT fk_7d8d780e640841e FOREIGN KEY(prime_broker_id) REFERENCES pm922_stag.prime_broker(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.888000+01:00 NOTICE ALTER TABLE pm922_stag.property ADD CONSTRAINT fk_8bf21cde1f897a7d FOREIGN KEY(developer_name_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.888000+01:00 NOTICE ALTER TABLE pm922_stag.property ADD CONSTRAINT fk_8bf21cdeb8948909 FOREIGN KEY(designer_name_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.889000+01:00 NOTICE ALTER TABLE pm922_stag.property ADD CONSTRAINT fk_8bf21cdedaf6876d FOREIGN KEY(construction_company_name_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.890000+01:00 NOTICE ALTER TABLE pm922_stag.property ADD CONSTRAINT fk_8bf21cdef92f3e70 FOREIGN KEY(country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.891000+01:00 NOTICE ALTER TABLE pm922_stag.property_acquisition_info ADD CONSTRAINT fk_fab7d0e5276cc6a FOREIGN KEY(owner_property_id) REFERENCES pm922_stag.owner_property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.892000+01:00 NOTICE ALTER TABLE pm922_stag.property_acquisition_info ADD CONSTRAINT fk_fab7d0e549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.893000+01:00 NOTICE ALTER TABLE pm922_stag.property_acquisition_info ADD CONSTRAINT fk_fab7d0e7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.895000+01:00 NOTICE ALTER TABLE pm922_stag.property_acquisition_info_intl ADD CONSTRAINT fk_381084bb74a95ee FOREIGN KEY(property_acquisition_info_id) REFERENCES pm922_stag.property_acquisition_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.896000+01:00 NOTICE ALTER TABLE pm922_stag.property_addresses ADD CONSTRAINT fk_1e2577ab87a8e82 FOREIGN KEY(property_address_status_id) REFERENCES pm922_stag.property_address_status(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.897000+01:00 NOTICE ALTER TABLE pm922_stag.property_addresses_intl ADD CONSTRAINT fk_6c89ed5340168f46 FOREIGN KEY(property_address_id) REFERENCES pm922_stag.property_addresses(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.898000+01:00 NOTICE ALTER TABLE pm922_stag.property_address_status ADD CONSTRAINT fk_969d3ba7549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.898000+01:00 NOTICE ALTER TABLE pm922_stag.property_address_status_intl ADD CONSTRAINT fk_40ac5a3c87a8e82 FOREIGN KEY(property_address_status_id) REFERENCES pm922_stag.property_address_status(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.899000+01:00 NOTICE ALTER TABLE pm922_stag.property_facilities ADD CONSTRAINT fk_1849a5e6a7014910 FOREIGN KEY(facility_id) REFERENCES pm922_stag.facilities(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.900000+01:00 NOTICE ALTER TABLE pm922_stag.property_facilities ADD CONSTRAINT fk_1849a5e6f4770a29 FOREIGN KEY(feature_information_management_id) REFERENCES pm922_stag.feature_information_management(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.901000+01:00 NOTICE ALTER TABLE pm922_stag.property_facilities_intl ADD CONSTRAINT fk_5720957b1193190 FOREIGN KEY(feature_information_management_intl_id) REFERENCES pm922_stag.feature_information_management_intl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.902000+01:00 NOTICE ALTER TABLE pm922_stag.property_facilities_intl ADD CONSTRAINT fk_5720957be56306c1 FOREIGN KEY(facility_intl_id) REFERENCES pm922_stag.facilities_intl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.903000+01:00 NOTICE ALTER TABLE pm922_stag.property_features ADD CONSTRAINT fk_e147e85760e4b879 FOREIGN KEY(feature_id) REFERENCES pm922_stag.features(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.903000+01:00 NOTICE ALTER TABLE pm922_stag.property_features ADD CONSTRAINT fk_e147e857f4770a29 FOREIGN KEY(feature_information_management_id) REFERENCES pm922_stag.feature_information_management(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.904000+01:00 NOTICE ALTER TABLE pm922_stag.property_features_intl ADD CONSTRAINT fk_dc1943c11193190 FOREIGN KEY(feature_information_management_intl_id) REFERENCES pm922_stag.feature_information_management_intl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.905000+01:00 NOTICE ALTER TABLE pm922_stag.property_features_intl ADD CONSTRAINT fk_dc1943c160e4b879 FOREIGN KEY(feature_id) REFERENCES pm922_stag.features(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.905000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info ADD CONSTRAINT fk_407a215b549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.906000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info ADD CONSTRAINT fk_407a215be0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.907000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_intl ADD CONSTRAINT fk_8903f4273d64b08 FOREIGN KEY(income_expenditure_info_id) REFERENCES pm922_stag.property_income_expenditure_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.907000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_8903f4273d64b08" cannot be implemented
+DETAIL: Key columns "income_expenditure_info_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.property_income_expenditure_info_intl ADD CONSTRAINT fk_8903f4273d64b08 FOREIGN KEY(income_expenditure_info_id) REFERENCES pm922_stag.property_income_expenditure_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.907000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_tmp ADD CONSTRAINT fk_e70b102a549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.908000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_tmp ADD CONSTRAINT fk_e70b102ae0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.909000+01:00 NOTICE ALTER TABLE pm922_stag.property_income_expenditure_info_tmp_intl ADD CONSTRAINT fk_b1538ad59633697b FOREIGN KEY(income_expenditure_info_tmp_id) REFERENCES pm922_stag.property_income_expenditure_info_tmp(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.910000+01:00 NOTICE ALTER TABLE pm922_stag.property_intl ADD CONSTRAINT fk_356caf04549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.911000+01:00 NOTICE ALTER TABLE pm922_stag.property_media ADD CONSTRAINT fk_ac3f600154177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.913000+01:00 NOTICE ALTER TABLE pm922_stag.property_media ADD CONSTRAINT fk_ac3f6001549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.915000+01:00 NOTICE ALTER TABLE pm922_stag.property_repair_info ADD CONSTRAINT fk_a1ca25812989f1fd FOREIGN KEY(invoice_id) REFERENCES pm922_stag.invoice(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.916000+01:00 NOTICE ALTER TABLE pm922_stag.property_repair_info ADD CONSTRAINT fk_a1ca258154177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.917000+01:00 NOTICE ALTER TABLE pm922_stag.property_repair_info_intl ADD CONSTRAINT fk_471f383515f44f6f FOREIGN KEY(property_repair_info_id) REFERENCES pm922_stag.property_repair_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.918000+01:00 NOTICE ALTER TABLE pm922_stag.property_tag ADD CONSTRAINT property_tag_ibfk_1 FOREIGN KEY(tag_id) REFERENCES pm922_stag.tags(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.919000+01:00 NOTICE ALTER TABLE pm922_stag.property_tag ADD CONSTRAINT property_tag_ibfk_2 FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.920000+01:00 NOTICE ALTER TABLE pm922_stag.register_address ADD CONSTRAINT fk_4d22d49f549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.922000+01:00 NOTICE ALTER TABLE pm922_stag.registration_of_address_info ADD CONSTRAINT fk_d3d22aa7549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.924000+01:00 NOTICE ALTER TABLE pm922_stag.remittance_type_intl ADD CONSTRAINT fk_167e15e8e872685c FOREIGN KEY(remittance_type_id) REFERENCES pm922_stag.remittance_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.925000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract ADD CONSTRAINT fk_d9e9316a54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.926000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract ADD CONSTRAINT fk_d9e9316a9033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.927000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_cancellation ADD CONSTRAINT fk_e5c9c0172576e0fd FOREIGN KEY(contract_id) REFERENCES pm922_stag.rental_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.928000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_cancellation_intl ADD CONSTRAINT fk_6eab6fd7566add7a FOREIGN KEY(rental_contract_cancellation_id) REFERENCES pm922_stag.rental_contract_cancellation(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.929000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_info ADD CONSTRAINT fk_fb70241d2576e0fd FOREIGN KEY(contract_id) REFERENCES pm922_stag.rental_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.930000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_info_intl ADD CONSTRAINT fk_63c85b59d3526572 FOREIGN KEY(rental_contract_info_id) REFERENCES pm922_stag.rental_contract_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.931000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_renew_info ADD CONSTRAINT fk_84422e9e2576e0fd FOREIGN KEY(contract_id) REFERENCES pm922_stag.rental_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.932000+01:00 NOTICE ALTER TABLE pm922_stag.rental_contract_renew_info_intl ADD CONSTRAINT fk_757b25b89393677 FOREIGN KEY(contract_renew_info_id) REFERENCES pm922_stag.rental_contract_renew_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.933000+01:00 NOTICE ALTER TABLE pm922_stag.rental_payment ADD CONSTRAINT fk_01234567909 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.934000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567909" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.rental_payment ADD CONSTRAINT fk_01234567909 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.934000+01:00 NOTICE ALTER TABLE pm922_stag.rental_payment ADD CONSTRAINT fk_rental_payment_room FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:01.960000+01:00 NOTICE ALTER TABLE pm922_stag.rental_payment ADD CONSTRAINT fk_rental_payment_tenant FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:01.978000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_owner ADD CONSTRAINT fk_a445cefe15f44f6f FOREIGN KEY(property_repair_info_id) REFERENCES pm922_stag.property_repair_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.979000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_owner ADD CONSTRAINT fk_a445cefe2989f1fd FOREIGN KEY(invoice_id) REFERENCES pm922_stag.owner_invoice(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.980000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_owner ADD CONSTRAINT fk_a445cefe7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.983000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_tenant ADD CONSTRAINT fk_4d84034615f44f6f FOREIGN KEY(property_repair_info_id) REFERENCES pm922_stag.property_repair_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.984000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_tenant ADD CONSTRAINT fk_4d8403462989f1fd FOREIGN KEY(invoice_id) REFERENCES pm922_stag.invoice(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.986000+01:00 NOTICE ALTER TABLE pm922_stag.repair_invoice_tenant ADD CONSTRAINT fk_4d8403469033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.987000+01:00 NOTICE ALTER TABLE pm922_stag.repair_reserve_fund_info ADD CONSTRAINT fk_a8faff51345bc702 FOREIGN KEY(payee_vendor_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.988000+01:00 NOTICE ALTER TABLE pm922_stag.repair_reserve_fund_info ADD CONSTRAINT fk_a8faff5154177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.989000+01:00 NOTICE ALTER TABLE pm922_stag.repair_reserve_fund_info_intl ADD CONSTRAINT fk_72aa4048c573676f FOREIGN KEY(repair_reserve_fund_info_id) REFERENCES pm922_stag.repair_reserve_fund_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.991000+01:00 NOTICE ALTER TABLE pm922_stag.room ADD CONSTRAINT fk_729f519b1f897a7d FOREIGN KEY(developer_name_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.992000+01:00 NOTICE ALTER TABLE pm922_stag.room ADD CONSTRAINT fk_729f519b549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.994000+01:00 NOTICE ALTER TABLE pm922_stag.room ADD CONSTRAINT fk_729f519bdaf6876d FOREIGN KEY(construction_company_name_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.996000+01:00 NOTICE ALTER TABLE pm922_stag.room_acquisition_info ADD CONSTRAINT fk_f80dd4dd54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.998000+01:00 NOTICE ALTER TABLE pm922_stag.room_acquisition_info_intl ADD CONSTRAINT fk_7bbf0de578f51f0d FOREIGN KEY(room_acquisition_info_id) REFERENCES pm922_stag.room_acquisition_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.999000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info ADD CONSTRAINT fk_01234567894 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:01.999000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567894" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_income_expenditure_info ADD CONSTRAINT fk_01234567894 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.000000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info ADD CONSTRAINT fk_943c8d54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.029000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info ADD CONSTRAINT fk_943c8de0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.047000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_intl ADD CONSTRAINT fk_7ec043333d64b08 FOREIGN KEY(income_expenditure_info_id) REFERENCES pm922_stag.room_income_expenditure_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.047000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_7ec043333d64b08" cannot be implemented
+DETAIL: Key columns "income_expenditure_info_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_income_expenditure_info_intl ADD CONSTRAINT fk_7ec043333d64b08 FOREIGN KEY(income_expenditure_info_id) REFERENCES pm922_stag.room_income_expenditure_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.047000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_tmp ADD CONSTRAINT fk_01234567893 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.047000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567893" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_income_expenditure_info_tmp ADD CONSTRAINT fk_01234567893 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.048000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_tmp ADD CONSTRAINT fk_46eb59be54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.092000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_tmp ADD CONSTRAINT fk_46eb59bee0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.125000+01:00 NOTICE ALTER TABLE pm922_stag.room_income_expenditure_info_tmp_intl ADD CONSTRAINT fk_6d3741ba9633697b FOREIGN KEY(income_expenditure_info_tmp_id) REFERENCES pm922_stag.room_income_expenditure_info_tmp(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.126000+01:00 NOTICE ALTER TABLE pm922_stag.room_intl ADD CONSTRAINT fk_4970fa5a54177093 FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.128000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info ADD CONSTRAINT fk_01234567910 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.128000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567910" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_money_transfer_info ADD CONSTRAINT fk_01234567910 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.128000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info ADD CONSTRAINT fk_rmti_remttance_type FOREIGN KEY(remittance_type_id) REFERENCES pm922_stag.remittance_type(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.129000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info ADD CONSTRAINT fk_rmti_room_id FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.131000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_intl ADD CONSTRAINT fx_rmtii_pid FOREIGN KEY(room_money_transfer_info_id) REFERENCES pm922_stag.room_money_transfer_info(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.131000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fx_rmtii_pid" cannot be implemented
+DETAIL: Key columns "room_money_transfer_info_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_money_transfer_info_intl ADD CONSTRAINT fx_rmtii_pid FOREIGN KEY(room_money_transfer_info_id) REFERENCES pm922_stag.room_money_transfer_info(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.131000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_tmp ADD CONSTRAINT fk_01234567911 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.131000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fk_01234567911" cannot be implemented
+DETAIL: Key columns "gl_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_money_transfer_info_tmp ADD CONSTRAINT fk_01234567911 FOREIGN KEY(gl_id) REFERENCES pm922_stag.gl(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.131000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_tmp ADD CONSTRAINT fk_rmtit_remttance_type FOREIGN KEY(remittance_type_id) REFERENCES pm922_stag.remittance_type(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.133000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_tmp ADD CONSTRAINT fk_rmtit_room_id FOREIGN KEY(room_id) REFERENCES pm922_stag.room(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.134000+01:00 NOTICE ALTER TABLE pm922_stag.room_money_transfer_info_tmp_intl ADD CONSTRAINT fx_rmtiti_pid FOREIGN KEY(room_money_transfer_info_tmp_id) REFERENCES pm922_stag.room_money_transfer_info_tmp(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.134000+01:00 ERROR PostgreSQL Database error 42804: foreign key constraint "fx_rmtiti_pid" cannot be implemented
+DETAIL: Key columns "room_money_transfer_info_tmp_id" and "id" are of incompatible types: numeric and bigint.
+QUERY: ALTER TABLE pm922_stag.room_money_transfer_info_tmp_intl ADD CONSTRAINT fx_rmtiti_pid FOREIGN KEY(room_money_transfer_info_tmp_id) REFERENCES pm922_stag.room_money_transfer_info_tmp(id) ON UPDATE NO ACTION ON DELETE NO ACTION
+2019-05-09T07:30:02.134000+01:00 NOTICE ALTER TABLE pm922_stag.tax_agent_contract ADD CONSTRAINT fk_291953bd549213ec FOREIGN KEY(property_id) REFERENCES pm922_stag.property(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.135000+01:00 NOTICE ALTER TABLE pm922_stag.tax_agent_contract ADD CONSTRAINT fk_291953bd7e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.136000+01:00 NOTICE ALTER TABLE pm922_stag.tax_agent_contract_intl ADD CONSTRAINT fk_110f0bd85e3a0e0d FOREIGN KEY(tax_agent_contract_id) REFERENCES pm922_stag.tax_agent_contract(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.137000+01:00 NOTICE ALTER TABLE pm922_stag.tax_classification_info ADD CONSTRAINT fk_10f23cd07e3c61f9 FOREIGN KEY(owner_id) REFERENCES pm922_stag.owner(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.138000+01:00 NOTICE ALTER TABLE pm922_stag.tax_classification_info_intl ADD CONSTRAINT fk_b8dbed8acb881adf FOREIGN KEY(tax_classification_info_id) REFERENCES pm922_stag.tax_classification_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.139000+01:00 NOTICE ALTER TABLE pm922_stag.tenant ADD CONSTRAINT fk_4e59c462f92f3e70 FOREIGN KEY(country_id) REFERENCES pm922_stag.country(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.139000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_info ADD CONSTRAINT fk_81e66b849033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.140000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_info_intl ADD CONSTRAINT fk_50e7036d4f1d83cc FOREIGN KEY(tenant_info_id) REFERENCES pm922_stag.tenant_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.142000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_intl ADD CONSTRAINT fk_601b4aed9033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.143000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_work_info ADD CONSTRAINT fk_11b241b29033212a FOREIGN KEY(tenant_id) REFERENCES pm922_stag.tenant(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.145000+01:00 NOTICE ALTER TABLE pm922_stag.tenant_work_info_intl ADD CONSTRAINT fk_abfd0d676c9643bb FOREIGN KEY(tenant_work_info_id) REFERENCES pm922_stag.tenant_work_info(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.147000+01:00 NOTICE ALTER TABLE pm922_stag."user" ADD CONSTRAINT fk_8d93d6497e9e4c8c FOREIGN KEY(photo_id) REFERENCES pm922_stag.photo(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.148000+01:00 NOTICE ALTER TABLE pm922_stag."user" ADD CONSTRAINT fk_8d93d649c54c8c93 FOREIGN KEY(type_id) REFERENCES pm922_stag.user_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.149000+01:00 NOTICE ALTER TABLE pm922_stag.user_login_log ADD CONSTRAINT fk_f18d121ba76ed395 FOREIGN KEY(user_id) REFERENCES pm922_stag."user"(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.150000+01:00 NOTICE ALTER TABLE pm922_stag.vendor_industry_type_info ADD CONSTRAINT fk_c48ff6dd345bc702 FOREIGN KEY(payee_vendor_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.151000+01:00 NOTICE ALTER TABLE pm922_stag.vendor_industry_type_info ADD CONSTRAINT fk_c48ff6ddf2d3bae6 FOREIGN KEY(industry_type_id) REFERENCES pm922_stag.industry_type(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.152000+01:00 NOTICE ALTER TABLE pm922_stag.vendor_invoice_item_info ADD CONSTRAINT fk_4267c61d345bc702 FOREIGN KEY(payee_vendor_id) REFERENCES pm922_stag.payee_vendor(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.152000+01:00 NOTICE ALTER TABLE pm922_stag.vendor_invoice_item_info ADD CONSTRAINT fk_4267c61de0b6648d FOREIGN KEY(invoice_item_id) REFERENCES pm922_stag.invoice_item(id) ON UPDATE RESTRICT ON DELETE RESTRICT
+2019-05-09T07:30:02.156000+01:00 NOTICE ALTER DATABASE pm922_stag SET search_path TO public, pm922_stag;
+2019-05-09T07:30:02.216000+01:00 LOG report summary reset
