@@ -1,0 +1,63 @@
+Prerequisite:
+1. perl
+	- yum update
+	- yum install perl
+
+2. yum install postgresql11
+
+3. check if systat is already installed: yum list installed sysstat
+https://www.itadminstrator.com/2016/12/how-to-install-and-configure-sysstat.html
+
+4. Create postgres user
+
+
+
+6. create the /run/postgresql directory with write permission for postgres and read permission for others. /run is typically mounted on a ram disk so it's normal that it's empty.
+chmod 700 /run/postgresql
+
+
+1. rpm -Uvh https://yum.postgresql.org/11/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+
+2. yum install pgcluu
+
+systemctl daemon-reload
+systemctl enable pgcluu_collectd.service
+systemctl enable pgcluu.service
+systemctl enable pgcluu.timer
+systemctl start pgcluu_collectd.service
+systemctl start pgcluu.timer
+
+3. Give ownership of /var/lib/pgcluu to user postgres: chown -R postgres:postgres /var/lib/pgcluu
+
+4. create the /run/postgresql directory with write permission for postgres and read permission for others. /run is typically mounted on a ram disk so it's normal that it's empty.
+chmod 700 /run/postgresql
+
+5. collect from remote:
+
+- mkdir /tmp/stat_db1/
+- pgcluu_collectd -D -i 60 /tmp/stat_db1/ -h 172.16.0.168 -U postgres --disable-sar
+
+collect local:
+- mkdir /tmp/stat_db1/
+- pgcluu_collectd -D -i 60 --rotate-daily /tmp/stat_db1/
+
+collect every hour:
+pgcluu_collectd -D -i 3600 --rotate-daily /tmp/stat_db1/
+
+
+on live HRIS:
+collect db/sys stats every 15 mins:
+pgcluu_collectd -D -i 900 --rotate-daily /var/lib/pgsql/db-stats
+
+
+
+
+
+pgcluu_collectd -k
+            LOG: Received terminating signal.
+            mkdir /tmp/report_db1/
+            pgcluu -o /tmp/report_db1/ /tmp/stat_db1/
+
+
+
+- pgcluu_collectd -D -i 60 /tmp/stat_db1/ -h 172.16.0.168 -U postgres
