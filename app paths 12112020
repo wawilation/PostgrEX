@@ -1,0 +1,32 @@
+etcd:
+- binaries will be installed in /usr/bin (etcd and etcdctl)
+- config file is here: /etc/etcd/etcd.conf
+- ETCD_DATA_DIR = /var/lib/etcd/default.etcd
+
+postgres_exporter:
+- /opt/postgres_exporter
+- binaries in /usr/local/bin
+- service: /etc/systemd/system/postgres_exporter.service
+
+prometheus:
+- app dir: /etc/prometheus
+- binaries in /usr/local/bin/
+- storage: /var/lib/prometheus
+
+grafana:
+- binaries in /usr/sbin/grafana-server
+- init.d script in /etc/init.d/grafana-server
+- default file in /etc/sysconfig/grafana-server
+- configuration file in /etc/grafana/grafana.ini
+- log file at /var/log/grafana/grafana.log
+
+In summary:
+We need:
+- /etc
+- /var
+- /usr/bin
+- /usr/local
+- /usr/sbin
+- /opt
+
+
