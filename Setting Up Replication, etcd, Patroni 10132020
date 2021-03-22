@@ -1,0 +1,238 @@
+172.16.0.168 - postgres-replicate
+172.16.0.169 - etcd
+
+
+
+/var/lib/pgsql/backup/wal-archive
+
+
+
+archive_mode=always
+archive_command='cp %p /var/lib/pgsql/backup/wal-archive/%f'
+wal_level=replica
+archive_timeout=15min
+max_wal_senders=4
+wal_keep_segments=500
+wal_sender_timeout=60
+
+
+
+host    replication     rep_user        172.16.0.91/32       trust
+host    replication     rep_user        172.16.0.168/32      trust
+
+
+RSAAuthentication yes
+PubkeyAuthentication yes
+
+
+
+
+localhost:5432:postgres:postgres:postgres
+*:*:*:postgres:postgres
+*:*:*:repuser:repuser
+172.16.0.91:5432:postgres:postgres:postgres
+172.16.0.168:5432:postgres:postgres:postgres
+
+
+pg_basebackup -h 172.16.0.91 -p 5432 -Xs -D /var/lib/pgsql/11/data -U rep_user -P
+
+
+standby_mode = 'on'
+primary_conninfo = 'user=rep_user host=172.16.0.91 port=5432 sslmode=prefer sslcompression=1 krbsrvname=postgres target_session_attrs=any'
+restore_command = 'scp -rp postgres@172.16.0.91:/var/lib/pgsql/backup/wal-archive/%f %p'
+recovery_target_timeline = 'latest'
+trigger_file = '/var/lib/pgsql/11/data/trigger_promotion'
+
+
+etcd:
+
+ETCD_INITIAL_CLUSTER="etcd-hris.dr.az.exist.com=http://172.16.0.169:2380"
+ETCD_INITIAL_CLUSTER_STATE="new"
+ETCD_INITIAL_CLUSTER_TOKEN="etcd-hris-cluster"
+ETCD_INITIAL_ADVERTISE_PEER_URLS="http://172.16.0.169:2380"
+ETCD_DATA_DIR="/var/lib/etcd/default.etcd"
+ETCD_LISTEN_PEER_URLS="http://172.16.0.169:2380"
+ETCD_LISTEN_CLIENT_URLS="http://172.16.0.169:2379,http://127.0.0.1:2379"
+ETCD_ADVERTISE_CLIENT_URLS="http://172.16.0.169:2379"
+ETCD_NAME="etcd-hris.dr.az.exist.com"
+
+
+Patroni:
+
+Master:
+scope: hris-cluster
+name: hris-1
+
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: 172.16.0.91:8008
+
+etcd:
+  host: 172.16.0.169:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    postgresql:
+      use_pg_rewind: true
+      use_slots: true
+      parameters:
+       archive_mode: always
+       archive_command: 'cp %p /var/lib/pgsql/backup/wal-archive/%f'
+       wal_level: replica
+       archive_timeout: 15min
+       max_wal_senders: 4
+       wal_keep_segments: 500
+       wal_sender_timeout: 60s
+       hot_standby: on
+       wal_receiver_status_interval: 10s
+       max_standby_streaming_delay: 30s
+       hot_standby_feedback: on
+       wal_receiver_timeout: 60s
+       max_replication_slots: 10
+       checkpoint_timeout: 15min
+
+  initdb:
+  - encoding: UTF8
+
+  pg_hba:
+  - host all all 127.0.0.1/32 ident
+  - host all all 0.0.0.0/0 trust
+  - host replication rep_user 172.16.0.91/32 trust
+  - host replication rep_user 172.16.0.168/32 trust
+
+  users:
+    postgres:
+      password: postgres
+      options:
+        - createrole
+        - createdb
+    rep_user:
+      password: rep_user
+      options:
+        - replication
+
+postgresql:
+  listen: 127.0.0.1, 172.16.0.91:5432
+  connect_address: 172.16.0.91:5432
+  data_dir: /var/lib/pgsql/11/data
+  config_dir: /var/lib/pgsql/11/data
+  bin_dir: /usr/pgsql-11/bin
+  authentication:
+    replication:
+      username: rep_user
+      password: rep_user
+    superuser:
+      username: postgres
+      password: postgres
+  parameters:
+    unix_socket_directories: '/var/run/postgresql, /tmp'
+
+
+
+
+
+Slave:
+scope: hris-cluster
+name: hris-2
+
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: 172.16.0.168:8008
+
+etcd:
+  host: 172.16.0.169:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    postgresql:
+      use_pg_rewind: true
+      use_slots: true
+      parameters:
+       archive_mode: always
+       archive_command: 'cp %p /var/lib/pgsql/backup/wal-archive/%f'
+       wal_level: replica
+       archive_timeout: 15min
+       max_wal_senders: 4
+       wal_keep_segments: 500
+       wal_sender_timeout: 60s
+       hot_standby: on
+       wal_receiver_status_interval: 10s
+       max_standby_streaming_delay: 30s
+       hot_standby_feedback: on
+       wal_receiver_timeout: 60s
+       max_replication_slots: 10
+       checkpoint_timeout: 15min
+
+  initdb:
+  - encoding: UTF8
+
+  pg_hba:
+  - host all all 127.0.0.1/32 ident
+  - host all all 0.0.0.0/0 trust
+  - host replication rep_user 172.16.0.91/32 trust
+  - host replication rep_user 172.16.0.168/32 trust
+
+  users:
+    postgres:
+      password: postgres
+      options:
+        - createrole
+        - createdb
+    rep_user:
+      password: rep_user
+      options:
+        - replication
+
+postgresql:
+  listen: 127.0.0.1, 172.16.0.168:5432
+  connect_address: 172.16.0.168:5432
+  data_dir: /var/lib/pgsql/11/data
+  config_dir: /var/lib/pgsql/11/data
+  bin_dir: /usr/pgsql-11/bin
+  authentication:
+    replication:
+      username: rep_user
+      password: rep_user
+    superuser:
+      username: postgres
+      password: postgres
+  parameters:
+    unix_socket_directories: '/var/run/postgresql, /tmp'
+
+
+
+patronictl -d etcd://172.16.0.169:2379 list hris-cluster
+
+patronictl -d etcd://172.16.0.169:2379 failover hris-cluster
+
+patronictl -d etcd://172.16.0.169:2379 restart hris-cluster
+
+patronictl -d etcd://172.16.0.169:2379 restart hris-cluster hris-2
+
+patronictl -d etcd://172.16.0.169:2379 restart hris-cluster hris-1
+
+
+patronictl -d etcd://172.16.0.169:2379 reload hris-cluster
+
+
+patronictl -d etcd://172.16.0.169:2379 edit-config hris-cluster
+
+
+
+
+
+
+
+
+
+
+
+
