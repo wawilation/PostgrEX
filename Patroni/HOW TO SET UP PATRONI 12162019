@@ -63,13 +63,13 @@ yum install epel-release
 yum install gcc python-devel
 yum install python-psycopg2 python-pip PyYAML
 yum install python2-pip
-pip install --upgrade pip 
+pip install --upgrade pip --> if error here: do this: a.) yum remove python2-pip b.) yum install python2-pip -y c.) pip install --upgrade pip==20.3.4 d.) verify: pip -V (if does not work, log out, and log in)
 pip install --upgrade setuptools
 pip install psycopg2-binary
 pip install python-etcd
 pip install psutil
 pip install wheel
-pip install patroni
+pip install patroni  --> if error: ImportError: No module named six, do pip install six
 
 2. Create a systemd service for patroni. So edit the file /etc/systemd/system/patroni.service to contain the following:
 [Unit]
@@ -221,6 +221,8 @@ postgresql:
   parameters:
     unix_socket_directories: '/tmp'
 
+
+systemctl start patroni (make sure the auth in pg_hba.conf is trust for local)
 
 patronictl -d etcd://192.168.243.203:2379 list my-ha-cluster
 
